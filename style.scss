@@ -169,7 +169,7 @@ html{
             padding-top: 30px;
             padding-bottom: 30px;
             padding-left: 0px;
-            min-height: 50vh;
+            height: 50vh;
 
              &::after{
                 background-color: brown;
@@ -183,6 +183,7 @@ html{
             float: left;
             width: 50%;
             margin: 30px 10px 0 16px;
+            max-width: 40vw;
 
            
         }
