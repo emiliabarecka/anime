@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+   
+    background-image: url(img/drugietlo.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 60vh;
+    position: relative;
+    text-transform: uppercase;
+    box-shadow: 10px 0 10px 10px violet;
+   
+}
+
+ nav{
+    /* position: absolute; */
+    left: 0;
+    z-index: 100;
+   
+ }
+header img{
+    width: 20vw;
+    position: absolute;
+    bottom: 0;
+    right: -60px;
+}
+img+img{
+    left: 20%;
+    bottom:10%;
+    border-radius: 10px;
+    box-shadow:10px 15px 15px violet;
+}
+.welcome h1{
+    font-size: 5rem;
+    color: violet;
+    font-weight: bolder;
+    position: absolute;
+    top: 15%; 
+    left: 20%;
+    
+    
+}
+ .welcome h2{
+    font-size: 2rem;
+    color: violet;
+    position: absolute;
+    top: 30%;
+    left:5%;
+    right:25%;
+    padding: 20px 10px; 
+    background-color: rgba(238, 130, 238, 0.144);
+    text-align: center;
+}
+
+.welcome h3{
+    font-size: 1.5rem;
+    color:violet;
+    position: absolute;
+    top: 50%;
+    left:45%;
+}
+header button{
+    background-color:whitesmoke;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: violet;
+    padding:10px 30px;
+    border:4px violet solid ;
+    border-radius: 10%;
+    position:absolute;
+    bottom: 25%;
+    left: 60%;
+    transition: 0.2s;
+}
+/* header button:hover{
+    background-color: violet;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+}
+header button:hover+nav{
+    left: 60%;
+    top: 75%;
+
+} */
+nav a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    transition: 0.3s;
+
+}
+li{
+    list-style: none;
+}
+/* nav:hover{
+    left: 60%;
+    top:75%;
+} */
+a:hover{
+    background-color: violet;
+}
+  section.black {
+    background-image: url(img/petals.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    font-size: 2rem;
+    color: blueviolet;
+    height: 70vh;
+    position: relative;
+    z-index: -1;
+}
+.black h1{
+    padding: 5% 0 2% 5%;
+    font-weight: bolder;
+}
+
+.black p{
+    padding: 2% 2%;
+    float: left;
+    width: 60%;
+    text-align: justify;
+}
+.black a{
+    text-decoration: none;
+    color: violet;
+    font-weight: bolder;
+}
+.black a:hover{
+    background-color: blueviolet;
+}
+.black img{
+    position: absolute;
+   
+    right: 10%;
+    width: 20%;
+    border-radius: 10px;
+    box-shadow: 15px 10px 10px blueviolet;
+    border: 1px solid blueviolet;
+}
+@media(min-width: 360px){
+    header{
+        height: 100vh;
+    }
+    header img{
+        display: none;
+    }
+    img:nth-of-type(2){
+        display: block;
+        width: 90%;
+        left: 5%;
+        right: 5%;
+        bottom: 15%;
+            }
+    .welcome h1{
+        font-size: 2rem;
+        top: 15%;
+        left: 5%;
+        right: 5%;
+        text-align: center;
+    }
+    .welcome h2{
+        font-size: 1.5rem;
+        top: 20%;
+        left: 2%;
+        right: 2%;
+        text-align: center;
+    }
+    .welcome  h3{
+        font-size: 1.5rem;
+        top: 40%;
+        left: 2%;
+        right: 2%;
+        text-align: center;
+    }
+    .welcome h1, .welcome h2, .welcome h3{
+        color: whitesmoke;
+    }
+   
+    /* nav:hover{
+    left: 60%;
+    top:75%;
+} */
+
+     header button{
+         left: 30%;
+         bottom: 5%;
+         font-size: 1rem;
+     }
+     /* header button:hover+nav{
+        left: 30%;
+        top: 75%;
+    
+    }  */
+    section.black{
+       height: 110vh;
+        font-size: 1.5rem;
+        position: relative;
+    }
+    .black h1{
+        padding: 3% 2% 1% 2%;
+    } 
+    .black img{
+        width: 39%;
+        right: 2%;
+        top: 10%;
+    } 
+    .black img:nth-of-type(2){
+        left: 59%;
+        bottom:40%;
+        top: 60%;
+        
+    }
+    .black p {
+       width: 58%;
+    } 
+   
+}
+@media(min-width:400px){
+    section.black{
+        height: 90vh;
+    }
+  .black img:nth-of-type(2){
+      bottom: 35%;
+  }
+  .black h1{
+      padding: 5% 2%;
+  }
+  .black p{
+     width: 56%;
+  }
+}
+
+.d-none{
+    display: none;
+}

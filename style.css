@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+html {
+  font-size: 10px;
+}
+
+html header {
+  position: relative;
+  background-image: url("img/drugietlo.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #f8ccf8;
+}
+
+html header h1, html header h2, html header h3 {
+  font-size: 3rem;
+  padding: 20px;
+}
+
+html header h2, html header h3 {
+  font-size: 1.7rem;
+}
+
+html header button, html header nav {
+  display: none;
+}
+
+html header img {
+  display: inline-block;
+  width: 45%;
+}
+
+html header img:nth-of-type(1) {
+  margin: 0 0 50px 20px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 0 20px 20px #d6aad6;
+          box-shadow: 0 0 20px 20px #d6aad6;
+}
+
+@media (min-width: 768px) {
+  html header button {
+    display: block;
+    margin-left: 60px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color: #dba8db;
+    border-radius: 15%;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    position: absolute;
+    bottom: 0;
+  }
+  html header nav {
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+  }
+  html header li a {
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    border: 1px solid whitesmoke;
+    border-radius: 15%;
+    background-color: rgba(219, 168, 219, 0.5);
+    padding: 10px 4px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    width: 60%;
+    letter-spacing: 1.2px;
+  }
+  html header a:hover {
+    background-color: #dba8db;
+  }
+  html header li {
+    list-style: none;
+  }
+}
+
+@media (min-width: 996px) {
+  html header h1 {
+    font-size: 4rem;
+    padding-top: 10%;
+  }
+  html header h2, html header h3 {
+    padding: 30px;
+  }
+  html header li a {
+    font-size: 1.5rem;
+  }
+  html header img:nth-of-type(1) {
+    margin-bottom: 15%;
+  }
+  html header button {
+    font-size: 1.5rem;
+    bottom: 5%;
+  }
+  html header nav {
+    bottom: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  html header h1 {
+    padding-top: 5%;
+  }
+  html header h2, html header h3 {
+    font-size: 2rem;
+  }
+  html header button {
+    font-size: 2rem;
+  }
+  html header li a {
+    font-size: 2rem;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.alfa {
+  background-color: rgba(219, 168, 219, 0.5) !important;
+}
+/*# sourceMappingURL=style.css.map */
