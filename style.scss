@@ -33,6 +33,7 @@ html{
         img{
             display: inline-block;
             width: 45%;
+            border-radius: 10%;
         }
         img:nth-of-type(1){
           margin: 0 0 50px 20px;
@@ -117,12 +118,12 @@ html{
             }
             button{
                 font-size: 2rem;
-                left: 10%;
-                bottom:20%;
+                left: 5%;
+                bottom:10%;
             }
             nav{
-                left: 10%;
-                bottom: 30%;
+                left: 5%;
+                bottom: 20%;
             }
             li a{
                 font-size: 2rem;
@@ -132,6 +133,10 @@ html{
             }
             img:nth-of-type(1){
                 margin-bottom: 5%;
+            }
+            img:nth-of-type(2){
+                margin-left: 160px;
+                margin-bottom: 50px;
             }
         }
     }

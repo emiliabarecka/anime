@@ -37,6 +37,7 @@ html header button, html header nav {
 html header img {
   display: inline-block;
   width: 45%;
+  border-radius: 10%;
 }
 
 html header img:nth-of-type(1) {
@@ -121,12 +122,12 @@ html header img:nth-of-type(1) {
   }
   html header button {
     font-size: 2rem;
-    left: 10%;
-    bottom: 20%;
+    left: 5%;
+    bottom: 10%;
   }
   html header nav {
-    left: 10%;
-    bottom: 30%;
+    left: 5%;
+    bottom: 20%;
   }
   html header li a {
     font-size: 2rem;
@@ -136,6 +137,10 @@ html header img:nth-of-type(1) {
   }
   html header img:nth-of-type(1) {
     margin-bottom: 5%;
+  }
+  html header img:nth-of-type(2) {
+    margin-left: 160px;
+    margin-bottom: 50px;
   }
 }
 
