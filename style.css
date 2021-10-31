@@ -176,6 +176,7 @@ html section#black img + p {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 0px;
+  min-height: 50vh;
 }
 
 html section#black img + p::after {
