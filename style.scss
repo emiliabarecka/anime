@@ -117,9 +117,21 @@ html{
             }
             button{
                 font-size: 2rem;
+                left: 10%;
+                bottom:20%;
+            }
+            nav{
+                left: 10%;
+                bottom: 30%;
             }
             li a{
                 font-size: 2rem;
+            }
+            img{
+                width: 20%;
+            }
+            img:nth-of-type(1){
+                margin-bottom: 5%;
             }
         }
     }

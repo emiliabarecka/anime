@@ -121,9 +121,21 @@ html header img:nth-of-type(1) {
   }
   html header button {
     font-size: 2rem;
+    left: 10%;
+    bottom: 20%;
+  }
+  html header nav {
+    left: 10%;
+    bottom: 30%;
   }
   html header li a {
     font-size: 2rem;
+  }
+  html header img {
+    width: 20%;
+  }
+  html header img:nth-of-type(1) {
+    margin-bottom: 5%;
   }
 }
 
