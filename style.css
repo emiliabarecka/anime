@@ -164,25 +164,27 @@ html section#black h1 {
 
 html section#black p {
   text-align: justify;
-  padding: 1% 5%;
+  padding: 2% 5%;
   color: #6b6174;
   font-size: 1.2rem;
 }
 
 html section#black img + p {
   display: inline-block;
-  width: 36%;
-  padding-top: 50px;
-  margin-bottom: 0px;
-  padding-left: 0px;
-  height: 50vh;
+  width: 38%;
+  padding-top: 10%;
+  margin-bottom: 5%;
+  margin-left: 20px;
+}
+
+html section#black p + p {
+  margin-top: 5%;
 }
 
 html section#black img {
-  display: block;
-  float: left;
-  width: 50%;
-  margin: 30px 10px 0 16px;
+  display: inline-block;
+  width: 40%;
+  margin: 12% 0 5% 2%;
   max-width: 200px;
   border-radius: 5%;
   -webkit-box-shadow: 0 0 10px 10px #beb7be;
@@ -230,7 +232,7 @@ html section#black a:hover {
 
 @media (min-width: 1200px) {
   html section#black div {
-    width: 80vw;
+    width: 60vw;
     margin: 0 auto;
   }
 }
