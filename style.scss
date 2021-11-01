@@ -166,8 +166,8 @@ html{
         img+p{
             display: inline-block;
             width: 38%;
-            padding-top: 10%;
-            margin-bottom: 5%;
+            padding-top: 5%;
+            margin-bottom: 10%;
             margin-left:20px;
             //  height: 50vh;
 
@@ -198,6 +198,11 @@ html{
         }
         a:hover{
             background-color:rgb(235, 188, 235) ;
+        }
+        @media(min-width:560px){
+            p{
+                font-size: 1.6rem;
+            }
         }
         @media(min-width: 720px){
             img{

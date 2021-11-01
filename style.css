@@ -172,8 +172,8 @@ html section#black p {
 html section#black img + p {
   display: inline-block;
   width: 38%;
-  padding-top: 10%;
-  margin-bottom: 5%;
+  padding-top: 5%;
+  margin-bottom: 10%;
   margin-left: 20px;
 }
 
@@ -200,6 +200,12 @@ html section#black a {
 
 html section#black a:hover {
   background-color: #ebbceb;
+}
+
+@media (min-width: 560px) {
+  html section#black p {
+    font-size: 1.6rem;
+  }
 }
 
 @media (min-width: 720px) {
