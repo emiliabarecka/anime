@@ -228,6 +228,13 @@ html section#black a:hover {
   }
 }
 
+@media (min-width: 1200px) {
+  html section#black div {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+
 .d-none {
   display: none;
 }

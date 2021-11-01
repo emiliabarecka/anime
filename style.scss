@@ -222,6 +222,12 @@ html{
                 padding-left:50%
             }
         }
+        @media(min-width:1200px){
+            div{
+                width:80vw;
+                margin: 0 auto;
+            }
+        }
     }
 }
 .d-none {
