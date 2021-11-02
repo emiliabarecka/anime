@@ -14,10 +14,14 @@ html{
 
         @media(min-width:1200px){
             div.container{
-                width:90vw;
-                padding: 0 4vw;
+                width:80vw;
+                // padding: 0 4vw;
+                margin-left: 10vw;
                 box-sizing: content-box;
             }
+        }
+        li{
+            list-style: none;
         }
 
         header{
@@ -94,9 +98,7 @@ html{
                     background-color: rgb(151, 65, 151);
                 }
 
-                li{
-                    list-style: none;
-                }
+               
                 img:nth-of-type(2){
                     margin: 10px 20px;
                 }
@@ -160,7 +162,7 @@ html{
             background-position: center;
             background-size: cover;
             text-align: center;
-        
+            letter-spacing: 0.7px;
 
             h1{
                 font-size: 2.5rem;
@@ -215,7 +217,6 @@ html{
             li{
                 color:rgb(107, 97, 116) ;
                 font-size: 1.2rem;
-                list-style: none;
                 text-align: left;
                 padding: 0.5% 5%;
             }
@@ -274,6 +275,36 @@ html{
                 }
             }
         
+        }
+        section#alchemist{
+            background-image: url(img/space.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: azure;
+            font-weight: normal;
+            letter-spacing: 0.7px;
+            img{
+                display:block;
+                max-width:30%;
+                float: left;
+                margin:60px 10px 0 10px;
+                border-radius: 10%;
+            }
+            img+img{
+                float: right;
+                margin:50px 10px 0 10px ;
+            }
+            h1{
+                padding-bottom:40px ;
+                font-size: 2rem;
+                font-weight: normal;
+            }
+            p{
+                text-align: justify;
+                font-size: 1.6rem;
+                margin:20px 20px;
+            }
         }
     }    
 
