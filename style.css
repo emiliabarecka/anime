@@ -11,7 +11,16 @@ html {
   font-family: 'Fruktur', cursive;
 }
 
-html header {
+@media (min-width: 1200px) {
+  body div.container {
+    width: 90vw;
+    padding: 0 5%;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+}
+
+body header {
   position: relative;
   background-image: url("img/drugietlo.webp");
   background-repeat: no-repeat;
@@ -22,26 +31,26 @@ html header {
           box-shadow: 10px 0 10px 10px violet;
 }
 
-html header h1, html header h2, html header h3 {
+body header h1, body header h2, body header h3 {
   font-size: 3rem;
   padding: 20px;
 }
 
-html header h2, html header h3 {
+body header h2, body header h3 {
   font-size: 1.7rem;
 }
 
-html header button, html header nav {
+body header button, body header nav {
   display: none;
 }
 
-html header img {
+body header img {
   display: inline-block;
-  width: 45%;
+  width: 43%;
   border-radius: 10%;
 }
 
-html header img:nth-of-type(1) {
+body header img:nth-of-type(1) {
   margin: 0 0 50px 20px;
   border-radius: 100px;
   -webkit-box-shadow: 0 0 20px 20px #d6aad6;
@@ -49,7 +58,7 @@ html header img:nth-of-type(1) {
 }
 
 @media (min-width: 720px) {
-  html header button {
+  body header button {
     display: block;
     margin-left: 60px;
     margin-bottom: 10px;
@@ -64,13 +73,13 @@ html header img:nth-of-type(1) {
     position: absolute;
     bottom: 0;
   }
-  html header nav {
+  body header nav {
     display: block;
     position: absolute;
     bottom: 50px;
     left: 60px;
   }
-  html header li a {
+  body header li a {
     display: block;
     text-decoration: none;
     color: whitesmoke;
@@ -84,77 +93,77 @@ html header img:nth-of-type(1) {
     width: 60%;
     letter-spacing: 1.2px;
   }
-  html header a:hover {
+  body header a:hover {
     background-color: #dba8db;
   }
-  html header li {
+  body header li {
     list-style: none;
   }
-  html header img:nth-of-type(2) {
+  body header img:nth-of-type(2) {
     margin: 10px 20px;
   }
 }
 
 @media (min-width: 996px) {
-  html header h1 {
+  body header h1 {
     font-size: 4rem;
     padding-top: 10%;
   }
-  html header h2, html header h3 {
+  body header h2, body header h3 {
     padding: 30px;
   }
-  html header li a {
+  body header li a {
     font-size: 1.5rem;
   }
-  html header img:nth-of-type(1) {
+  body header img:nth-of-type(1) {
     margin-bottom: 15%;
   }
-  html header button {
+  body header button {
     font-size: 1.5rem;
     bottom: 5%;
   }
-  html header nav {
+  body header nav {
     bottom: 10%;
   }
 }
 
 @media (min-width: 1200px) {
-  html header h1 {
+  body header h1 {
     padding-top: 5%;
   }
-  html header h2, html header h3 {
+  body header h2, body header h3 {
     font-size: 2rem;
   }
-  html header button {
+  body header button {
     font-size: 2rem;
     left: 5%;
     bottom: 10%;
   }
-  html header nav {
+  body header nav {
     left: 10%;
     bottom: 20%;
   }
-  html header li a {
+  body header li a {
     font-size: 1.5rem;
   }
-  html header img:nth-of-type(2) {
+  body header img:nth-of-type(2) {
     width: 20%;
     margin-left: 160px;
   }
-  html header img:nth-of-type(1) {
+  body header img:nth-of-type(1) {
     margin-bottom: 5%;
     width: 20%;
   }
 }
 
-html section#black {
+body section#black {
   background-image: url(img/petals.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-html section#black h1 {
+body section#black h1 {
   font-size: 2.5rem;
   padding-top: 5%;
   margin-bottom: 2%;
@@ -162,26 +171,26 @@ html section#black h1 {
   color: blueviolet;
 }
 
-html section#black p {
+body section#black p {
   text-align: justify;
   padding: 2% 5%;
   color: #6b6174;
   font-size: 1.2rem;
 }
 
-html section#black img + p {
-  display: inline-block;
+body section#black img + p {
+  float: right;
   width: 38%;
   padding-top: 5%;
   margin-bottom: 10%;
-  margin-left: 20px;
+  margin-right: 2%;
 }
 
-html section#black p + p {
-  margin-top: 5%;
+body section#black p + p {
+  margin-top: 2%;
 }
 
-html section#black img {
+body section#black img {
   display: inline-block;
   width: 40%;
   margin: 12% 0 5% 2%;
@@ -191,55 +200,65 @@ html section#black img {
           box-shadow: 0 0 10px 10px #beb7be;
 }
 
-html section#black a {
+body section#black a {
   text-decoration: none;
   font-weight: bolder;
   color: blueviolet;
   font-size: 1.3rem;
 }
 
-html section#black a:hover {
+body section#black a:hover {
   background-color: #ebbceb;
 }
 
 @media (min-width: 560px) {
-  html section#black p {
+  body section#black p {
     font-size: 1.6rem;
+  }
+  body section#black img {
+    max-width: 300px;
+    margin-top: 5%;
   }
 }
 
 @media (min-width: 720px) {
-  html section#black img {
+  body section#black img {
     margin-left: 80px;
   }
-  html section#black p {
+  body section#black p {
     font-size: 1.8rem;
   }
-  html section#black h1 {
+  body section#black h1 {
     font-size: 3rem;
   }
-  html section#black a {
+  body section#black a {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 996px) {
-  html section#black img {
-    margin-left: 150px;
+  body section#black img {
+    margin-left: 50px;
+    margin-right: 50px;
     -webkit-box-shadow: 0 0 20px 30px #beb7be;
             box-shadow: 0 0 20px 30px #beb7be;
-    max-width: 250px;
+    max-width: 400px;
   }
-  html section#black p + p {
-    margin-top: 80px;
-    padding-left: 50%;
+  body section#black p + p {
+    margin-top: 0;
+    padding-left: 150px;
+  }
+  body section#black p {
+    font-size: 2rem;
+  }
+  body section#black img + p {
+    margin-bottom: 5%;
   }
 }
 
 @media (min-width: 1200px) {
-  html section#black div {
-    width: 60vw;
-    margin: 0 auto;
+  body section#black p {
+    font-size: 2.2rem;
   }
 }
 
