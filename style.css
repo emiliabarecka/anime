@@ -417,6 +417,44 @@ body section#alchemist ul {
   }
 }
 
+body section#jojo {
+  font-size: 2rem;
+  background-image: url(img/banner-1711743__340.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: azure;
+  -webkit-box-shadow: inset 0 0 5px 5px red;
+          box-shadow: inset 0 0 5px 5px red;
+}
+
+body section#jojo div.bColor {
+  background-color: rgba(190, 34, 34, 0.486);
+  z-index: 100;
+}
+
+body section#jojo img {
+  padding: 20px;
+}
+
+body section#jojo img:nth-of-type(1) {
+  width: 95vw;
+}
+
+body section#jojo h1 {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+body section#jojo img + p {
+  margin-bottom: 40px;
+}
+
+body section#jojo p {
+  text-align: justify;
+  padding: 0 20px;
+}
+
 .d-none {
   display: none;
 }
