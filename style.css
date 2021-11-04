@@ -423,9 +423,11 @@ body section#jojo {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: azure;
+  color: white;
   -webkit-box-shadow: inset 0 0 5px 5px red;
           box-shadow: inset 0 0 5px 5px red;
+  letter-spacing: 0.7px;
+  font-weight: 100;
 }
 
 body section#jojo div.bColor {
@@ -434,16 +436,22 @@ body section#jojo div.bColor {
 }
 
 body section#jojo img {
-  padding: 20px;
+  display: block;
+  margin: 40px auto;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 10px 10px red;
+          box-shadow: 0 0 10px 10px red;
 }
 
 body section#jojo img:nth-of-type(1) {
-  width: 95vw;
+  width: 90vw;
 }
 
 body section#jojo h1 {
   padding-top: 20px;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 2.5rem;
 }
 
 body section#jojo img + p {
@@ -453,6 +461,109 @@ body section#jojo img + p {
 body section#jojo p {
   text-align: justify;
   padding: 0 20px;
+}
+
+body section#jojo a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: black;
+}
+
+body section#jojo a:hover {
+  background-color: white;
+}
+
+body section#jojo li {
+  text-align: left;
+}
+
+body section#jojo ul {
+  margin-left: 20px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 720px) {
+  body section#jojo div.container {
+    padding: 0 20px;
+  }
+  body section#jojo h1 {
+    font-size: 3.5rem;
+  }
+  body section#jojo p {
+    font-size: 2.5rem;
+  }
+  body section#jojo a {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  body section#jojo img:nth-of-type(1) {
+    width: 80vw;
+  }
+  body section#jojo p {
+    font-size: 3rem;
+  }
+  body section#jojo li {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+  }
+  body section#jojo a {
+    font-size: 3.5rem;
+  }
+  body section#jojo h1 {
+    padding-top: 60px;
+  }
+}
+
+body section#fate {
+  background-image: url(img/gold-313346__340.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: inset 0 0 10px 10px #a18e1f;
+          box-shadow: inset 0 0 10px 10px #a18e1f;
+}
+
+body section#fate div.first, body section#fate div.second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 20px;
+  padding: 40px 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 20px;
+}
+
+body section#fate img {
+  display: block;
+  width: 40vw;
+  border-radius: 10%;
+  -webkit-box-shadow: 0 0 10px 10px #a18e1f;
+          box-shadow: 0 0 10px 10px #a18e1f;
+}
+
+body section#fate h1 {
+  text-transform: uppercase;
+  padding-top: 40px;
+  font-size: 2rem;
+}
+
+body section#fate p {
+  text-align: justify;
+}
+
+body section#fate li {
+  text-align: left;
+}
+
+body section#fate ul {
+  padding: 5px 0 5px 20px;
+}
+
+body section#fate div + p {
+  padding-left: 20px;
 }
 
 .d-none {
