@@ -539,6 +539,7 @@ body section#fate div.first, body section#fate div.second {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid #a18e1f;
 }
 
 body section#fate img {
@@ -559,6 +560,7 @@ body section#fate h1 {
   text-transform: uppercase;
   padding-top: 40px;
   font-size: 2rem;
+  border-bottom: 2px solid #a18e1f;
 }
 
 body section#fate p {
@@ -575,11 +577,48 @@ body section#fate li {
 }
 
 body section#fate ul {
-  padding: 5px 0 5px 20px;
+  padding: 5px 0 20px 20px;
 }
 
 body section#fate div + p {
   padding-left: 20px;
+}
+
+body section#fate a {
+  text-decoration: none;
+  color: red;
+  text-transform: uppercase;
+}
+
+body section#fate a:hover {
+  background-color: #a18e1f;
+}
+
+@media (min-width: 720px) {
+  body section#fate div.container {
+    padding: 0 20px;
+  }
+  body section#fate h1 {
+    font-size: 3.5rem;
+  }
+  body section#fate p {
+    font-size: 2.5rem;
+  }
+  body section#fate a {
+    font-size: 3rem;
+  }
+  body section#fate li {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 720px) and (min-width: 1200px) {
+  body section#fate p {
+    font-size: 3rem;
+  }
+  body section#fate h1 {
+    margin-bottom: 50px;
+  }
 }
 
 .d-none {
