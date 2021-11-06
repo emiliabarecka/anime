@@ -645,20 +645,22 @@ section#mo {
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  color: yellowgreen;
+  color: #0b4c66;
+  letter-spacing: 0.7px;
 }
 
 section#mo h1 {
   font-size: 2.5rem;
   padding: 40px 0;
   text-transform: uppercase;
+  border-bottom: 1px solid rgba(94, 238, 113, 0.657);
 }
 
 section#mo div.container {
-  background: rgba(12, 231, 30, 0.157);
+  background: rgba(134, 238, 169, 0.192);
   z-index: 100;
-  -webkit-box-shadow: inset 0 0 10px 10px yellowgreen;
-          box-shadow: inset 0 0 10px 10px yellowgreen;
+  -webkit-box-shadow: inset 0 0 10px 10px rgba(94, 238, 113, 0.657);
+          box-shadow: inset 0 0 10px 10px rgba(94, 238, 113, 0.657);
 }
 
 section#mo p, section#mo li {
@@ -679,9 +681,9 @@ section#mo .first, section#mo .second, section#mo .third {
           align-items: center;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-  padding-bottom: 40px;
-  padding-top: 20px;
-  border-bottom: 1px solid #062e06;
+  margin: 0 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #18a818;
 }
 
 section#mo img {
@@ -690,8 +692,8 @@ section#mo img {
       flex-shrink: 1;
   width: 40vw;
   border-radius: 20px;
-  -webkit-box-shadow: 0 0 5px 5px yellowgreen;
-          box-shadow: 0 0 5px 5px yellowgreen;
+  -webkit-box-shadow: 0 0 10px 5px rgba(94, 238, 113, 0.657);
+          box-shadow: 0 0 10px 5px rgba(94, 238, 113, 0.657);
 }
 
 section#mo .first img {
@@ -704,6 +706,23 @@ section#mo .second img {
       -ms-flex-order: 1;
           order: 1;
   margin-right: 20px;
+}
+
+section#mo .third div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+section#mo .third div p {
+  margin: 20px 0;
+}
+
+section#mo .third div li {
+  margin: 5px 0;
 }
 
 .d-none {
