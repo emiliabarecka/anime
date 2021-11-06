@@ -312,23 +312,46 @@ html{
             font-weight: normal;
             letter-spacing: 0.7px;
             box-shadow: inset 0 10px 10px rgb(228, 219, 228);
+
+            .clearfix{
+                padding: 30px;
+                padding-top: 5%;
+
+                &::after{
+                    content:" ";
+                    display: block;
+                    clear: both;
+                }
+            }
+
+           
+           
             img{
                 display:block;
-                max-width:30%;
+                width:30%;
                 float: left;
-                margin:60px 10px 0 10px;
+                margin:5% 10px 0 10px;
                 border-radius: 10%;
                 box-shadow: 0 0 5px 5px rgb(228, 219, 228);
             }
-            img+img{
+            img:nth-of-type(2){
                 float: right;
-                margin:50px 10px 0 10px;
+                margin: auto;
+                margin-left: auto;
+                padding: 0;
             }
             h1{
-                padding-bottom:40px;
-                padding-top: 30px;
+                // padding-bottom:40px;
                 font-size: 2rem;
                 font-weight: normal;
+                float: left;
+                width: 30%;
+
+                @media(max-width:400px) {
+                    font-size: 1.6rem;
+                    
+                }
+
             }
             p{
                 text-align: justify;
@@ -466,7 +489,7 @@ html{
             }
             @media(min-width:1200px){
                 img:nth-of-type(1){
-                    width:60vw;
+                    width:50vw;
                 }
                 p{
                     font-size: 3rem;
@@ -566,7 +589,58 @@ html{
                 }
             }
         }
-    }    
+    } 
+        section#mo{
+            background-image: url(img/niagara-falls-218591__340.webp);
+            background-repeat: repeat;
+            background-size: cover;
+            background-position: center;
+            color: yellowgreen;
+
+            h1{
+                font-size: 2.5rem;
+                padding: 40px 0;
+                text-transform: uppercase;
+            }
+            div.container{
+                background:rgba(12, 231, 30, 0.157);
+                z-index: 100;
+                box-shadow: inset 0 0 10px 10px yellowgreen;
+            }
+            p, li{
+                font-size: 1.6rem;
+                text-align: justify;
+                padding:0 20px;
+                flex-grow: 1;
+            }
+            .first, .second, .third{
+                display: flex;
+                align-items: center;
+                align-content: space-around;
+                padding-bottom: 40px;
+                padding-top: 20px;
+                border-bottom: 1px solid rgb(6, 46, 6);
+            }
+            img{
+                margin-left: 20px;
+                flex-shrink: 1;
+                width: 40vw;
+                border-radius: 20px;
+                box-shadow:  0 0 5px 5px yellowgreen;
+            }
+            .first{
+                img{
+                    align-self: flex-start;
+                }
+            }
+
+            .second{
+                img{
+                    order: 1;
+                    margin-right: 20px;
+                }
+            }
+        }   
 
 .d-none {
     display: none;
