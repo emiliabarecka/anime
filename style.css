@@ -8,7 +8,7 @@
 
 html {
   font-size: 10px;
-  font-family: 'Fruktur', cursive;
+  font-family: "Courgette", cursive;
 }
 
 @media (min-width: 1200px) {
@@ -17,6 +17,13 @@ html {
     margin-left: 10vw;
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
+  }
+}
+
+@media (min-width: 1600px) {
+  body div.container {
+    width: 70vw;
+    margin-left: 15vw;
   }
 }
 
@@ -728,6 +735,31 @@ section#mo .third div p {
 
 section#mo .third div li {
   margin: 5px 0;
+}
+
+section#mo a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #09097e;
+}
+
+section#mo a:hover {
+  background-color: rgba(9, 9, 126, 0.322);
+}
+
+@media (min-width: 720px) {
+  section#mo h1 {
+    font-size: 3rem;
+  }
+  section#mo p, section#mo li {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  section#mo p, section#mo li {
+    font-size: 3rem;
+  }
 }
 
 .d-none {

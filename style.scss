@@ -9,7 +9,7 @@ $mo-shadow-color: rgba(230, 195, 241, 0.637);
 
 html{
     font-size: 10px;
-    font-family:'Fruktur', cursive;
+    font-family:"Courgette", cursive;
     
     }
     body{
@@ -20,6 +20,12 @@ html{
                 // padding: 0 4vw;
                 margin-left: 10vw;
                 box-sizing: content-box;
+            }
+        }
+        @media(min-width:1600px){
+            div.container{
+                width:70vw;
+                margin-left: 15vw;
             }
         }
         li{
@@ -666,6 +672,28 @@ html{
                         margin: 5px 0;
                     }
                     
+                }
+            }
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color:rgb(9, 9, 126);
+            }
+            a:hover{
+                background-color:rgba(9, 9, 126, 0.322) ;
+            }
+            
+            @media(min-width:720px){
+                h1{
+                    font-size: 3rem;
+                }
+                p, li{
+                    font-size: 2.3rem;
+                }
+            }
+            @media(min-width:1200px){
+                p,li{
+                    font-size: 3rem;
                 }
             }
         }   
