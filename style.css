@@ -197,6 +197,8 @@ body section#black {
   background-size: cover;
   text-align: center;
   letter-spacing: 0.7px;
+  -webkit-box-shadow: inset 0 0 5px 5px #beb7be;
+          box-shadow: inset 0 0 5px 5px #beb7be;
 }
 
 body section#black h1 {
@@ -641,26 +643,26 @@ body section#fate a:hover {
 }
 
 section#mo {
-  background-image: url(img/niagara-falls-218591__340.webp);
+  background-image: url(img/sunset-4086848__340.webp);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  color: #0b4c66;
+  color: #5f044b;
   letter-spacing: 0.7px;
+  -webkit-box-shadow: inset 0 0 10px 10px rgba(230, 195, 241, 0.637);
+          box-shadow: inset 0 0 10px 10px rgba(230, 195, 241, 0.637);
 }
 
 section#mo h1 {
   font-size: 2.5rem;
   padding: 40px 0;
+  margin: 0 20px;
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(94, 238, 113, 0.657);
+  border-bottom: 1px solid rgba(230, 195, 241, 0.637);
 }
 
 section#mo div.container {
-  background: rgba(134, 238, 169, 0.192);
   z-index: 100;
-  -webkit-box-shadow: inset 0 0 10px 10px rgba(94, 238, 113, 0.657);
-          box-shadow: inset 0 0 10px 10px rgba(94, 238, 113, 0.657);
 }
 
 section#mo p, section#mo li {
@@ -683,7 +685,7 @@ section#mo .first, section#mo .second, section#mo .third {
       align-content: space-around;
   margin: 0 20px;
   padding: 20px 0;
-  border-bottom: 1px solid #18a818;
+  border-bottom: 1px solid rgba(230, 195, 241, 0.637);
 }
 
 section#mo img {
@@ -692,8 +694,8 @@ section#mo img {
       flex-shrink: 1;
   width: 40vw;
   border-radius: 20px;
-  -webkit-box-shadow: 0 0 10px 5px rgba(94, 238, 113, 0.657);
-          box-shadow: 0 0 10px 5px rgba(94, 238, 113, 0.657);
+  -webkit-box-shadow: 0 0 10px 10px rgba(230, 195, 241, 0.637);
+          box-shadow: 0 0 10px 10px rgba(230, 195, 241, 0.637);
 }
 
 section#mo .first img {
@@ -706,6 +708,9 @@ section#mo .second img {
       -ms-flex-order: 1;
           order: 1;
   margin-right: 20px;
+  margin-left: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 section#mo .third div {
