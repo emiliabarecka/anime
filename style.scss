@@ -25,7 +25,7 @@ html{
         @media(min-width:1600px){
             div.container{
                 width:70vw;
-                margin-left: 15vw;
+                margin-left: 15vw;        
             }
         }
         li{
@@ -81,7 +81,7 @@ html{
                     border-radius: 15%;
                     color: rgb(248, 204, 248);
                     border: 2px solid rgb(248, 204, 248);    
-                    font-family:'Fruktur', cursive ;
+                    font-family:inherit;
                     position: absolute;
                     bottom: 0;
                 }
@@ -439,8 +439,9 @@ html{
             font-weight: 100;
 
             div.bColor{
-                background-color: rgba(190, 34, 34, 0.486);
+                background-color: rgba(134, 41, 41, 0.904);
                 z-index: 100;
+
             }
             img{
                 // padding: 20px;

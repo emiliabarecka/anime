@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  color: #f7edeb;
+}
+
+body {
+  background-image: url(img/fire.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .container {
+  background-color: rgba(151, 52, 34, 0.637);
+  text-align: center;
+  font-family: "Courgette", cursive;
+  letter-spacing: 0.7px;
+  min-height: 100vh;
+  -webkit-box-shadow: inset 0 0 5px 5px red;
+          box-shadow: inset 0 0 5px 5px red;
+}
+
+body .container h1 {
+  font-size: 2.2rem;
+  padding: 40px 0;
+  text-transform: uppercase;
+}
+
+body .container p, body .container li {
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+body .container p {
+  padding: 0 20px;
+}
+
+body .container ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+body .container .first, body .container .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 30px;
+}
+
+body .container img {
+  -webkit-box-shadow: 0 0 5px 5px red;
+          box-shadow: 0 0 5px 5px red;
+}
+
+body .container .first img {
+  border-radius: 10px;
+  margin: 0 auto 20px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 60vw;
+}
+
+body .container .second img {
+  width: 65vw;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=styleBassy.css.map */

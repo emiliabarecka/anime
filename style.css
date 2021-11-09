@@ -85,7 +85,7 @@ body header img:nth-of-type(2) {
     border-radius: 15%;
     color: #f8ccf8;
     border: 2px solid #f8ccf8;
-    font-family: 'Fruktur', cursive;
+    font-family: inherit;
     position: absolute;
     bottom: 0;
   }
@@ -459,7 +459,7 @@ body section#jojo {
 }
 
 body section#jojo div.bColor {
-  background-color: rgba(190, 34, 34, 0.486);
+  background-color: rgba(134, 41, 41, 0.904);
   z-index: 100;
 }
 
