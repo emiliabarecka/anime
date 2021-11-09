@@ -34,15 +34,27 @@ body .container h1 {
 body .container p, body .container li {
   font-size: 1.6rem;
   text-align: justify;
-}
-
-body .container p {
-  padding: 0 20px;
+  padding: 5px 20px;
 }
 
 body .container ul {
   list-style: none;
-  margin-left: 20px;
+}
+
+body .container ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  border-bottom: 1px solid red;
+}
+
+body .container ul li span {
+  padding-left: 20px;
 }
 
 body .container .first, body .container .second {
@@ -72,8 +84,54 @@ body .container .first img {
 }
 
 body .container .second img {
-  width: 65vw;
+  width: 80vw;
   margin: 20px auto;
   border-radius: 20px;
+}
+
+@media (min-width: 720px) {
+  body .container h1 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+  }
+  body .container p, body .container li {
+    font-size: 2rem;
+  }
+  body .container .first {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 60px;
+    border-bottom: 2px solid red;
+  }
+  body .container .first img {
+    margin-left: 20px;
+  }
+  body .container .second img {
+    margin-bottom: 60px;
+  }
+  body .container .second ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .container .second ul li {
+    border-left: 1px solid red;
+    border-bottom: 1px solid red;
+    display: block;
+    width: 40%;
+    margin-left: 20px;
+  }
+  body .container .second ul li span {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 /*# sourceMappingURL=styleBassy.css.map */

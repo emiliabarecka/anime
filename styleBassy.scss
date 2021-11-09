@@ -29,14 +29,22 @@ body{
                 p, li{
                     font-size: 1.6rem;
                     text-align: justify;
+                    padding: 5px 20px;
                 }
-                p{
-                    padding:0 20px;
-                }
+               
                 
                 ul{
                     list-style: none;
-                    margin-left: 20px;
+                    li{
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 20px;
+                        border-bottom: 1px solid red;
+                        
+                        span{
+                            padding-left: 20px;
+                        }
+                    }
                 }
 
                 .first, .second{
@@ -58,10 +66,52 @@ body{
                 }
 
                 .second img{
-                            width: 65vw;
-                            margin:20px auto;
-                            border-radius: 20px;
-                        }               
-                
+                        width: 80vw;
+                        margin:20px auto;
+                        border-radius: 20px;
+                 }  
+
+             @media(min-width:720px){
+
+                h1{
+                    font-size: 2.8rem;
+                    margin-bottom: 40px;
+                }
+                p, li{
+                    font-size: 2rem;
+                }
+                .first{
+                    flex-direction: row;
+                    margin-bottom: 60px;
+                    border-bottom: 2px solid red;
+                    img{
+                        margin-left: 20px;
+                    }
+                }
+                .second{
+                    img{
+                        margin-bottom: 60px;
+                    }
+                    ul{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        
+                        li{
+                            border-left: 1px solid red;
+                            border-bottom: 1px solid red;
+                            display: block;
+                            width: 40%;
+                            margin-left: 20px;
+
+                            span{
+                                padding-top: 40px;
+                                padding-bottom: 40px;
+                            }
+                        }
+                    }
+                }
+             } 
+             
         }
 }
