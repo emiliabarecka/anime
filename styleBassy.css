@@ -15,8 +15,11 @@ body {
   background-size: cover;
 }
 
-body .container {
+body .color {
   background-color: rgba(151, 52, 34, 0.637);
+}
+
+body .color .container {
   text-align: center;
   font-family: "Courgette", cursive;
   letter-spacing: 0.7px;
@@ -25,23 +28,23 @@ body .container {
           box-shadow: inset 0 0 5px 5px red;
 }
 
-body .container h1 {
+body .color .container h1 {
   font-size: 2.2rem;
   padding: 40px 0;
   text-transform: uppercase;
 }
 
-body .container p, body .container li {
+body .color .container p, body .color .container li {
   font-size: 1.6rem;
   text-align: justify;
   padding: 5px 20px;
 }
 
-body .container ul {
+body .color .container ul {
   list-style: none;
 }
 
-body .container ul li {
+body .color .container ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,11 +56,11 @@ body .container ul li {
   border-bottom: 1px solid red;
 }
 
-body .container ul li span {
+body .color .container ul li span {
   padding-left: 20px;
 }
 
-body .container .first, body .container .second {
+body .color .container .first, body .color .container .second {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,12 +73,12 @@ body .container .first, body .container .second {
   padding-bottom: 30px;
 }
 
-body .container img {
+body .color .container img {
   -webkit-box-shadow: 0 0 5px 5px red;
           box-shadow: 0 0 5px 5px red;
 }
 
-body .container .first img {
+body .color .container .first img {
   border-radius: 10px;
   margin: 0 auto 20px;
   -ms-flex-item-align: start;
@@ -83,35 +86,45 @@ body .container .first img {
   width: 60vw;
 }
 
-body .container .second img {
+body .color .container .second img {
   width: 80vw;
   margin: 20px auto;
   border-radius: 20px;
 }
 
+body .color .container section {
+  padding-bottom: 40px;
+}
+
+body .color .container button {
+  display: none;
+}
+
 @media (min-width: 720px) {
-  body .container h1 {
+  body .color .container h1 {
     font-size: 2.8rem;
     margin-bottom: 40px;
   }
-  body .container p, body .container li {
+  body .color .container p, body .color .container li {
     font-size: 2rem;
   }
-  body .container .first {
+  body .color .container .first {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     margin-bottom: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
     border-bottom: 2px solid red;
   }
-  body .container .first img {
-    margin-left: 20px;
+  body .color .container .first img {
+    margin-left: 40px;
   }
-  body .container .second img {
+  body .color .container .second img {
     margin-bottom: 60px;
   }
-  body .container .second ul {
+  body .color .container .second ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -122,16 +135,70 @@ body .container .second img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  body .container .second ul li {
+  body .color .container .second ul li {
     border-left: 1px solid red;
     border-bottom: 1px solid red;
-    display: block;
     width: 40%;
     margin-left: 20px;
   }
-  body .container .second ul li span {
+  body .color .container .second ul li span {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+  body .color .container button {
+    display: block;
+    margin: 20px auto 0;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 10px 20px;
+    border: 2px solid red;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 5px 5px red;
+            box-shadow: 0 0 5px 5px red;
+    color: red;
+    font-family: inherit;
+    font-weight: bold;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  body .color .container button:hover {
+    background-color: red;
+    color: white;
+  }
+}
+
+@media (min-width: 996px) {
+  body .color .container p, body .color .container li {
+    font-size: 2.4rem;
+  }
+  body .color .container h1 {
+    font-size: 3rem;
+  }
+  body .color .container .first p {
+    width: 40vw;
+  }
+  body .color .container .first img {
+    width: 30vw;
+    margin-left: 10vw;
+  }
+  body .color .container .second img {
+    width: 60vw;
+  }
+  body .color .container .second li {
+    width: 48vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  body .color div.container {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  body .color div.container .first p {
+    margin-left: 40px;
   }
 }
 /*# sourceMappingURL=styleBassy.css.map */
