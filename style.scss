@@ -1,3 +1,7 @@
+// @import 'styleBassy';
+// @import 'styleCiel';
+
+
 $mo-shadow-color: rgba(230, 195, 241, 0.637);
 
 *{
@@ -34,7 +38,7 @@ html{
 
         header{
             position: relative;
-            background-image: url("img/drugietlo.webp");
+            background-image: url("../img/drugietlo.webp");
             background-repeat: no-repeat;
             background-size: cover;
             text-transform: uppercase;
@@ -191,7 +195,7 @@ html{
             }
         }
         section#black {
-            background-image:url(img/petals.webp);
+            background-image:url(../img/petals.webp);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -313,7 +317,7 @@ html{
         }
         section#alchemist{
             
-            background-image: url(img/space.webp);            
+            background-image: url(../img/space.webp);            
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -429,7 +433,7 @@ html{
         }
         section#jojo{
             font-size: 1.6rem;
-            background-image: url(img/banner-1711743__340.webp);
+            background-image: url(../img/banner-1711743__340.webp);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -517,7 +521,7 @@ html{
             }
         }
         section#fate{
-            background-image: url(img/gold-313346__340.webp);
+            background-image: url(../img/gold-313346__340.webp);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -601,7 +605,7 @@ html{
         }
     } 
         section#mo{
-            background-image: url(img/sunset-4086848__340.webp);
+            background-image: url(../img/sunset-4086848__340.webp);
             background-repeat: repeat;
             background-size: cover;
             background-position: center;

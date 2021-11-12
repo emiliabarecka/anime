@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .container {
+  text-align: center;
+  font-family: "Courgette", cursive;
+  letter-spacing: 0.7px;
+  min-height: 100vh;
+}
+
+@media (min-width: 1200px) {
+  body .container {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@media (min-width: 360px) {
+  body .container h1 {
+    font-size: 2.2rem;
+    padding: 40px 0;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 720px) {
+  body .container h1 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body .container h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 360px) {
+  body .container .first {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 30px;
+  }
+  body .container .first img {
+    width: 60vw;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+@media (min-width: 720px) {
+  body .container .first {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .container .first img {
+    margin: 20px 20px 0 40px;
+  }
+  body .container .first p {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body .container .first {
+    width: 80vw;
+    margin: 0 auto 40px;
+  }
+  body .container .first img {
+    width: 30vw;
+  }
+  body .container .first p {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 360px) {
+  body .container .second img {
+    width: 80vw;
+    margin: 20px auto;
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: 720px) {
+  body .container .second img {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body .container .second img {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 360px) {
+  body .container p, body .container li, body .container span {
+    font-size: 1.6rem;
+    text-align: justify;
+    padding: 5px 20px;
+  }
+}
+
+@media (min-width: 720px) {
+  body .container p, body .container li, body .container span {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  body .container p, body .container li, body .container span {
+    font-size: 2.3rem;
+  }
+}
+
+body .container ul {
+  list-style: none;
+}
+
+@media (min-width: 720px) {
+  body .container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 360px) {
+  body .container ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 720px) {
+  body .container ul li {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  body .container ul li {
+    width: 43%;
+  }
+}
+
+@media (min-width: 720px) {
+  body .container ul span {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 360px) {
+  body .container button {
+    display: none;
+  }
+}
+
+@media (min-width: 720px) {
+  body .container button {
+    display: block;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: inherit;
+    font-weight: bold;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    position: fixed;
+    left: 80%;
+    top: 80px;
+    border-radius: 10px;
+  }
+  body .container button a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+  }
+}
+
+body.ciel {
+  background-image: url(../img/pentagram.webp);
+  -webkit-box-shadow: inset 0 0 10px 10px rgba(225, 0, 255, 0.753);
+          box-shadow: inset 0 0 10px 10px rgba(225, 0, 255, 0.753);
+  color: azure;
+}
+
+body.ciel .color {
+  background-color: rgba(110, 14, 110, 0.52);
+}
+
+body.ciel .color img {
+  -webkit-box-shadow: 0 0 5px 5px rgba(225, 0, 255, 0.753);
+          box-shadow: 0 0 5px 5px rgba(225, 0, 255, 0.753);
+}
+
+body.ciel .color li {
+  border-bottom: 1px solid rgba(225, 0, 255, 0.753);
+  border-left: 1px solid rgba(225, 0, 255, 0.753);
+  background-color: rgba(110, 14, 110, 0.17);
+}
+
+body.ciel .color button {
+  -webkit-box-shadow: 0 0 5px 5px rgba(225, 0, 255, 0.753);
+          box-shadow: 0 0 5px 5px rgba(225, 0, 255, 0.753);
+  color: rgba(225, 0, 255, 0.753);
+  background-color: azure;
+}
+
+body.ciel .color button a {
+  color: #500850;
+}
+
+body.ciel .color button a:hover {
+  color: azure;
+}
+
+body.ciel .color button:hover {
+  background-color: rgba(225, 0, 255, 0.753);
+}
+/*# sourceMappingURL=styleCiel.css.map */

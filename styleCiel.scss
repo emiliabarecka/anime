@@ -1,0 +1,34 @@
+@import "layout";
+$shadow:rgba(225, 0, 255, 0.753);
+
+body.ciel{   
+    background-image: url(../img/pentagram.webp);
+    box-shadow: inset 0 0 10px 10px $shadow ;
+    color: azure;
+        .color{
+            background-color:rgba(110, 14, 110, 0.52) ;
+                img{
+                    box-shadow: 0 0 5px 5px $shadow;
+                }
+                li{
+                    border-bottom: 1px solid $shadow;
+                    border-left: 1px solid $shadow;
+                    background-color:rgba(110, 14, 110, 0.17) ;
+                }
+                button{
+                    box-shadow: 0 0 5px 5px $shadow ;
+                    color: $shadow;
+                    background-color: azure;
+                        a{
+                            color: rgb(80, 8, 80);
+                            &:hover{
+                                color: azure;
+                            }
+                        }
+
+                        &:hover{
+                            background-color: $shadow;
+                        }
+                }
+        }
+}
