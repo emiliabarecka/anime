@@ -1,28 +1,26 @@
-const guzik = document.querySelector("button");
-const menu = document.querySelector("nav");
-// const opis = document.querySelector(".description");
-
-guzik.addEventListener("click", function(){
-    console.log("click");
-    menu.classList.toggle("d-none");
-    guzik.classList.toggle("alfa")
-})
-
 function replaceContent(contentFromJson){
-   const content1 =  document.querySelector(".description");
-   const content2 = document.querySelector(".name");
-   const content3 = document.querySelector(".looks");
+    const description = document.querySelector(".description");
+    const name = document.querySelector(".name");
+    const looks = document.querySelector(".looks");
+    const description1 = document.querySelector(".description1");
+    const title = document.querySelector(".title");
+    const klasyDoPodmiany = [ description, name, looks, description1, title ];
 
-   content1.textContent = contentFromJson["description"];
-   content2.textContent = contentFromJson["name"][1];  
-   content3.textContent = contentFromJson["looks"];
+    klasyDoPodmiany.forEach(function(klasa){
+    if (klasa){
+        klasa.textContent = contentFromJson[klasa.className];
+        }
+    })
 }
 
 fetch("../biblioteka.json")
     .then(response => response.json())
     .then(data => {
-        replaceContent(data[0]);
-        // tu sprawdza czy tytuł strony jest taki jak w jsonoe
-        console.log(document.title === data[0]['title']);
-        // console.log("czy jest cielu: ", data.includes('Ciel Phantomhiwe'));   
+        data.forEach(function(anime, index){
+
+            if(document.title === anime.title){
+                replaceContent(data[index]);
+            }
+        });
     });
+

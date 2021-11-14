@@ -1,8 +1,15 @@
 [
     {
-        "title":"Ciel Phantomhiwe",
+        "title":"najlepsze anime na start",
+        "description":"Jedna z kilku wersji adapatacji mangi autorstwa Hiromu Arakawy, o podtytule 'Misja Braci'.Głownymi bohaterami są dwaj nastoletni bracia Edward i Alphonse Elric. Obaj zajmują się alchemią, ktora jest formą nauki w tym uniwersum. Kiedy umiera ich matka, podejmują się proby wskrzeszenia jej za pomocą zakazanej dziedziny alchemii - Transmutacji, co kończy się tragicznie. Edward traci nogę i ręke, a dusza Alphonsa zostaje uwięzina w starej, ogromnej zbroi. Od tej pory bracia poszukują sposobu na przywrócenie ich ciał do normalności",
+        "description1": "Jest to pierwsze anime, jakie oglądałam i sprawiło, że zakochałam się w tym gatunku. Historia jest wzruszająca, zwroty akcji zaskakujące,a świetnie napisane postacie sprawiają, że naprawdę kibicujemy bohaterom. Oglądając można często się pośmiać, jak też uronić łezkę. Nie bez powodu w  2006 roku została uznana za najchętniej oglądane anime wszechczasów! ",
+        "link": ""
+    },
+    {
+        "title":"Ciel Phantomhive",
         "description":"13 chłopiec, który po zmarłych rodzicach odziedziczył tytuł Erla Phanthomhive i Królewskigo Psa Gończego. Tymczasowy pan i władca demona Sebastiana Michaelisa",
         "name":["Ciel (po francusku niebo,albo raj)Phantomhive", "Pies Gończy Królowej", "Master"," Lord Phanomhive"],
-        "looks":"Szczupłi i drobny 13-letni chłopiec o ciemno-granatowych włosach.Jedno z jego oczu jest błękitne jak niebo, drugie, które skrywa pod opaską, nosi na sobie znak piekielnego kontraktu zawartego z demonem"
+        "looks":"Szczupłi i drobny 13-letni chłopiec o ciemno-granatowych włosach.Jedno z jego oczu jest błękitne jak niebo, drugie, które skrywa pod opaską, nosi na sobie znak piekielnego <a href='https://pl.wikipedia.org/wiki/Fullmetal_Alchemist#Fabu%C5%82a'>CLICK</a> kontraktu zawartego z demonem"
     }
+    
 ]
