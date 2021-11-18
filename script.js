@@ -2,9 +2,10 @@ function replaceContent(contentFromJson){
     const description = document.querySelector(".description");
     const name = document.querySelector(".name");
     const looks = document.querySelector(".looks");
-    const description1 = document.querySelector(".description1");
+    const character = document.querySelector(".character")
     const title = document.querySelector(".title");
-    const klasyDoPodmiany = [ description, name, looks, description1, title ];
+    const abilities = document.querySelector(".abilities");
+    const klasyDoPodmiany = [ description, name, looks, title, character, abilities ];
 
     klasyDoPodmiany.forEach(function(klasa){
     if (klasa){

@@ -9,6 +9,8 @@ guzik.addEventListener("click", function(){
     guzik.classList.toggle("alfa")
 })
 
+
+
 fetch("mainPage.json")
     .then(response => response.json())
     .then(data => {
@@ -23,7 +25,7 @@ fetch("mainPage.json")
 
                     opis.innerHTML = anime["description"]
                     opis1.textContent = anime["description1"]
-                    info.textContent = anime["info"]
+                    info.innerHTML = anime["info"]
                     ep.textContent = anime["epizodes"]
                     type.textContent = anime["type"]
                 };
