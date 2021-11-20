@@ -9,9 +9,8 @@ guzik.addEventListener("click", function(){
     guzik.classList.toggle("alfa")
 })
 
-
-
-fetch("mainPage.json")
+    
+    fetch("./mainPage.json")
     .then(response => response.json())
     .then(data => {
         data.forEach(function(anime, index){
