@@ -22,7 +22,7 @@ html {
 
 @media (min-width: 1600px) {
   body div.container {
-    width: 70vw;
+    width: 60vw;
     margin-left: 15vw;
   }
 }
@@ -195,6 +195,17 @@ body header img:nth-of-type(2) {
   body header li a {
     font-size: 2rem;
   }
+}
+
+@media (min-width: 900px) {
+  body main .description,
+  body main .description1 {
+    line-height: 1.5em;
+  }
+}
+
+body main p.info-list {
+  text-decoration: underline;
 }
 
 body section#black {

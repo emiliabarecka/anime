@@ -28,7 +28,7 @@ html{
         }
         @media(min-width:1600px){
             div.container{
-                width:70vw;
+                width:60vw;
                 margin-left: 15vw;        
             }
         }
@@ -194,6 +194,20 @@ html{
                 
             }
         }
+        // jaro
+        main {
+            .description,
+            .description1 {
+                @media(min-width:900px){
+                line-height: 1.5em;
+                }
+            }
+
+            p.info-list {
+                text-decoration: underline;
+            }
+        } //
+
         section#black {
             background-image:url(../img/petals.webp);
             background-repeat: no-repeat;
@@ -624,7 +638,7 @@ html{
             div.container{
                 
                 z-index: 100;
-             
+            
             }
             p, li{
                 font-size: 1.6rem;
@@ -688,7 +702,7 @@ html{
             a:hover{
                 background-color:rgba(9, 9, 126, 0.322) ;
             }
-            
+        
             @media(min-width:720px){
                 h1{
                     font-size: 3rem;
