@@ -551,7 +551,8 @@ html{
                 justify-content: space-around;
                 gap: 20px;
                 align-items: center;
-                border-bottom: 1px solid rgb(161, 142, 31);                
+                border-bottom: 1px solid rgb(161, 142, 31); 
+                flex-wrap: wrap;               
             }
             img{
                 display: block;
@@ -648,6 +649,7 @@ html{
             }
             .first, .second, .third{
                 display: flex;
+                flex-wrap: wrap;
                 align-items: center;
                 align-content: space-around;
                 margin: 0 20px;
@@ -656,8 +658,12 @@ html{
             }
             img{
                 margin-left: 20px;
+                margin-top: 20px;
                 flex-shrink: 1;
-                width: 40vw;
+                //jaro
+                @media(min-width:720px){
+                    width: 40vw;
+                }
                 border-radius: 20px;
                 box-shadow:  0 0 10px 10px $mo-shadow-color;
                 // transition: .3s;
@@ -675,8 +681,7 @@ html{
             .second{
                 img{
                     order: 1;
-                    margin-right: 20px;
-                    margin-left: 0;
+                    margin-left: 20px;
                     align-self: flex-start;
                 }
             }
@@ -692,6 +697,9 @@ html{
                         margin: 5px 0;
                     }
                     
+                }
+                img{
+                    width: 80vw;
                 }
             }
             a{

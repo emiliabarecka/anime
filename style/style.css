@@ -580,6 +580,8 @@ body section#fate div.first, body section#fate div.second {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #a18e1f;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body section#fate img {
@@ -697,6 +699,8 @@ section#mo .first, section#mo .second, section#mo .third {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -709,12 +713,18 @@ section#mo .first, section#mo .second, section#mo .third {
 
 section#mo img {
   margin-left: 20px;
+  margin-top: 20px;
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  width: 40vw;
   border-radius: 20px;
   -webkit-box-shadow: 0 0 10px 10px rgba(230, 195, 241, 0.637);
           box-shadow: 0 0 10px 10px rgba(230, 195, 241, 0.637);
+}
+
+@media (min-width: 720px) {
+  section#mo img {
+    width: 40vw;
+  }
 }
 
 section#mo .first img {
@@ -726,8 +736,7 @@ section#mo .second img {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  margin-right: 20px;
-  margin-left: 0;
+  margin-left: 20px;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
@@ -747,6 +756,10 @@ section#mo .third div p {
 
 section#mo .third div li {
   margin: 5px 0;
+}
+
+section#mo .third img {
+  width: 80vw;
 }
 
 section#mo a {
