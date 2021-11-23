@@ -586,7 +586,7 @@ body section#fate div.first, body section#fate div.second {
 
 body section#fate img {
   display: block;
-  width: 30vw;
+  width: 50vw;
   border-radius: 10%;
   -webkit-box-shadow: 0 0 10px 10px #a18e1f;
           box-shadow: 0 0 10px 10px #a18e1f;
@@ -640,17 +640,25 @@ body section#fate a:hover {
   body section#fate div.container {
     padding: 0 20px;
   }
-  body section#fate h1 {
+  body section#fate div.container .second {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  body section#fate div.container h1 {
     font-size: 3.5rem;
   }
-  body section#fate p {
+  body section#fate div.container p {
     font-size: 2.5rem;
+    width: 60vw;
   }
-  body section#fate a {
+  body section#fate div.container a {
     font-size: 3rem;
   }
-  body section#fate li {
+  body section#fate div.container li {
     font-size: 2.3rem;
+  }
+  body section#fate div.container img {
+    width: 30vw;
   }
 }
 
@@ -714,6 +722,7 @@ section#mo .first, section#mo .second, section#mo .third {
 section#mo img {
   margin-left: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
   -ms-flex-negative: 1;
       flex-shrink: 1;
   border-radius: 20px;
@@ -721,15 +730,10 @@ section#mo img {
           box-shadow: 0 0 10px 10px rgba(230, 195, 241, 0.637);
 }
 
-@media (min-width: 720px) {
-  section#mo img {
-    width: 40vw;
-  }
-}
-
 section#mo .first img {
   -ms-flex-item-align: start;
       align-self: flex-start;
+  width: 60vw;
 }
 
 section#mo .second img {
@@ -759,7 +763,7 @@ section#mo .third div li {
 }
 
 section#mo .third img {
-  width: 80vw;
+  width: 70vw;
 }
 
 section#mo a {
@@ -778,6 +782,13 @@ section#mo a:hover {
   }
   section#mo p, section#mo li {
     font-size: 2.3rem;
+  }
+  section#mo .first, section#mo .second, section#mo .third {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  section#mo .first img, section#mo .second img, section#mo .third img {
+    width: 40vh;
   }
 }
 

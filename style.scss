@@ -556,7 +556,7 @@ html{
             }
             img{
                 display: block;
-                width: 30vw;
+                width: 50vw;
                 border-radius: 10%;
                 box-shadow: 0 0 10px 10px rgb(161, 142, 31) ;                
             }
@@ -596,19 +596,28 @@ html{
             @media(min-width:720px){
                 div.container{
                     padding: 0 20px;
+                    
+                     .second{
+                        flex-wrap: nowrap;
+                    }
+                
+                    h1{
+                        font-size: 3.5rem;
+                    }
+                    p{
+                        font-size: 2.5rem;
+                        width:60vw;
+                    }
+                    a{
+                        font-size: 3rem;
+                    }
+                    li{
+                        font-size: 2.3rem;
+                    }
+                    img{
+                        width:30vw
                 }
-                h1{
-                    font-size: 3.5rem;
-                }
-                p{
-                    font-size: 2.5rem;
-                }
-                a{
-                    font-size: 3rem;
-                }
-                li{
-                    font-size: 2.3rem;
-                }
+            }
                 @media(min-width:1200px){
                     p{
                         font-size: 3rem;
@@ -659,11 +668,8 @@ html{
             img{
                 margin-left: 20px;
                 margin-top: 20px;
+                margin-bottom: 20px;
                 flex-shrink: 1;
-                //jaro
-                @media(min-width:720px){
-                    width: 40vw;
-                }
                 border-radius: 20px;
                 box-shadow:  0 0 10px 10px $mo-shadow-color;
                 // transition: .3s;
@@ -675,6 +681,7 @@ html{
             .first{
                 img{
                     align-self: flex-start;
+                    width: 60vw;
                 }
             }
 
@@ -699,7 +706,7 @@ html{
                     
                 }
                 img{
-                    width: 80vw;
+                    width: 70vw;
                 }
             }
             a{
@@ -718,6 +725,14 @@ html{
                 p, li{
                     font-size: 2.3rem;
                 }
+               .first, .second, .third {
+                    flex-wrap: nowrap;
+
+                        img{
+                            width: 40vh;
+                        }
+                }
+
             }
             @media(min-width:1200px){
                 p,li{
