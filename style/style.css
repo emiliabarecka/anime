@@ -52,8 +52,17 @@ body header h2, body header h3 {
   font-size: 1.7rem;
 }
 
-body header button, body header nav {
+body header nav {
   display: none;
+}
+
+body header button {
+  display: none;
+}
+
+body header button:hover {
+  background-color: hotpink;
+  cursor: pointer;
 }
 
 body header img {
@@ -799,7 +808,7 @@ section#mo a:hover {
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .d-block {
@@ -808,5 +817,10 @@ section#mo a:hover {
 
 .alfa {
   background-color: rgba(219, 168, 219, 0.5) !important;
+}
+
+.superSchadow {
+  -webkit-box-shadow: 0 0 10px 10px gray !important;
+          box-shadow: 0 0 10px 10px gray !important;
 }
 /*# sourceMappingURL=style.css.map */

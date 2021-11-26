@@ -55,8 +55,15 @@ html{
             h2, h3{
                 font-size: 1.7rem;
             }
-            button, nav{
+            nav{
                 display: none;
+            }
+            button{
+                display: none;
+                &:hover{
+                    background-color: hotpink;
+                    cursor: pointer;
+                }
             }
             img{
                 display: inline-block;
@@ -742,7 +749,7 @@ html{
         }   
 
 .d-none {
-    display: none;
+    display: none !important;
 } 
 .d-block {
     display: block;
@@ -750,3 +757,6 @@ html{
 .alfa{
     background-color: rgba(219, 168, 219, 0.5) !important;
 } 
+.superSchadow{
+    box-shadow: 0 0 10px 10px gray !important;
+}
