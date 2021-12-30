@@ -1,6 +1,30 @@
 const guzik = document.querySelector("button");
 const menu = document.querySelector("nav");
 const sections = document.querySelectorAll("section");
+const imgs = document.querySelectorAll('img');
+const h1 = document.querySelector('.title');
+const text = 'Najlepsze anime na start';
+let activeLetter = 0;
+
+
+function addLetter(){
+    h1.textContent += text[activeLetter];
+    activeLetter++;
+    if(activeLetter === text.length){
+        activeText = 0;
+        clearInterval(inter);
+   }; 
+}
+let inter = setInterval(addLetter, 40);
+
+
+imgs.forEach((im) =>{
+    im.addEventListener('click', function(){ 
+        console.log(this);
+        im.classList.toggle("superSchadow");
+
+    })
+});
 
 
 guzik.addEventListener("click", function(){
