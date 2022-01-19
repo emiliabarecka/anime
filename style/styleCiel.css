@@ -7,13 +7,80 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Courgette", cursive;
+  letter-spacing: 0.7px;
+}
+
+body nav {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+@media (min-width: 720px) {
+  body nav {
+    height: 120px;
+  }
+}
+
+@media (min-width: 360px) {
+  body nav h1 {
+    font-size: 2.2rem;
+    padding: 40px 0;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 720px) {
+  body nav h1 {
+    display: inline-block;
+    width: 70%;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body nav h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 360px) {
+  body nav button {
+    display: none;
+  }
+}
+
+@media (min-width: 720px) {
+  body nav button {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: inherit;
+    font-weight: bold;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  body nav button a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+  }
 }
 
 body .container {
   text-align: center;
-  font-family: "Courgette", cursive;
-  letter-spacing: 0.7px;
+  padding-top: 130px;
   min-height: 100vh;
+}
+
+@media (min-width: 720px) {
+  body .container {
+    padding-top: 160px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -23,28 +90,6 @@ body .container {
     margin-right: auto;
     -webkit-box-shadow: none;
             box-shadow: none;
-  }
-}
-
-@media (min-width: 360px) {
-  body .container h1 {
-    font-size: 2.2rem;
-    padding: 40px 0;
-    text-transform: uppercase;
-  }
-}
-
-@media (min-width: 720px) {
-  body .container h1 {
-    font-size: 2.8rem;
-    margin-bottom: 40px;
-    padding-top: 60px;
-  }
-}
-
-@media (min-width: 1200px) {
-  body .container h1 {
-    font-size: 3rem;
   }
 }
 
@@ -192,31 +237,8 @@ body .container ul {
   }
 }
 
-@media (min-width: 360px) {
-  body .container button {
-    display: none;
-  }
-}
-
-@media (min-width: 720px) {
-  body .container button {
-    display: block;
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-family: inherit;
-    font-weight: bold;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    position: fixed;
-    left: 80%;
-    top: 80px;
-    border-radius: 10px;
-  }
-  body .container button a {
-    text-decoration: none;
-    display: block;
-    padding: 10px 20px;
-  }
+html {
+  font-size: 10px;
 }
 
 body.ciel {
@@ -224,6 +246,30 @@ body.ciel {
   -webkit-box-shadow: inset 0 0 10px 10px rgba(225, 0, 255, 0.753);
           box-shadow: inset 0 0 10px 10px rgba(225, 0, 255, 0.753);
   color: azure;
+}
+
+body.ciel nav {
+  background: #020024;
+  background: linear-gradient(27deg, #020024 0%, #790966 56%, #00d4ff 100%);
+}
+
+body.ciel nav button {
+  -webkit-box-shadow: 0 0 5px 5px rgba(225, 0, 255, 0.753);
+          box-shadow: 0 0 5px 5px rgba(225, 0, 255, 0.753);
+  color: rgba(225, 0, 255, 0.753);
+  background-color: azure;
+}
+
+body.ciel nav button a {
+  color: #500850;
+}
+
+body.ciel nav button a:hover {
+  color: azure;
+}
+
+body.ciel nav button:hover {
+  background-color: rgba(225, 0, 255, 0.753);
 }
 
 body.ciel .color {
@@ -239,24 +285,5 @@ body.ciel .color li {
   border-bottom: 1px solid rgba(225, 0, 255, 0.753);
   border-left: 1px solid rgba(225, 0, 255, 0.753);
   background-color: rgba(110, 14, 110, 0.17);
-}
-
-body.ciel .color button {
-  -webkit-box-shadow: 0 0 5px 5px rgba(225, 0, 255, 0.753);
-          box-shadow: 0 0 5px 5px rgba(225, 0, 255, 0.753);
-  color: rgba(225, 0, 255, 0.753);
-  background-color: azure;
-}
-
-body.ciel .color button a {
-  color: #500850;
-}
-
-body.ciel .color button a:hover {
-  color: azure;
-}
-
-body.ciel .color button:hover {
-  background-color: rgba(225, 0, 255, 0.753);
 }
 /*# sourceMappingURL=styleCiel.css.map */
