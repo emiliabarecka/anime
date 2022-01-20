@@ -9,7 +9,7 @@ function replaceContent(contentFromJson){
 
     klasyDoPodmiany.forEach(function(klasa){
     if (klasa){
-        klasa.textContent = contentFromJson[klasa.className];
+        klasa.innerHTML = contentFromJson[klasa.className];
         }
     })
 }
@@ -21,6 +21,7 @@ fetch("../biblioteka.json")
 
             if(document.title === anime.title){
                 replaceContent(data[index]);
+                console.log(document.title,index)
             }
         });
     });

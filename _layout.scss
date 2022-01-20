@@ -69,6 +69,7 @@ body{
         }   
         @media(min-width:$lg){
             width:70vw;
+            padding-top: 300px;
             margin-left: auto;
             margin-right: auto;
             box-shadow: none;
@@ -76,6 +77,10 @@ body{
         
         
         .first{
+            a{
+                text-decoration: none;
+                font-weight: bold;
+            }
             @media(min-width:$sm){
                 display: flex;
                 align-content: space-around;
@@ -136,10 +141,10 @@ body{
                 padding: 5px 20px;
             }
             @media(min-width:$md){
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
             @media(min-width:$lg){
-                font-size: 2.3rem;
+                font-size: 2.6rem;
             } 
         }
         ul{
@@ -170,6 +175,9 @@ body{
                         padding-top: 40px;
                         padding-bottom: 40px;
                         font-size: 1.6rem;
+                    }
+                    @media(min-width:$lg){
+                        font-size: 2rem;
                     }
                 }
             }

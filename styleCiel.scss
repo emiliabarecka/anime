@@ -28,7 +28,12 @@ body.ciel{
     }
         .color{
             background-color:rgba(110, 14, 110, 0.52) ;
-            
+                a{
+                    color: rgb(31, 2, 23);
+                    &:hover{
+                        background-color:rgba(80, 8, 80, 0.671);;
+                    }
+                }
                 img{
                     box-shadow: 0 0 5px 5px $shadow;
                 }
