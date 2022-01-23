@@ -257,58 +257,58 @@ html {
   font-size: 10px;
 }
 
-body.ciel {
-  background-image: url(../img/pentagram.webp);
-  -webkit-box-shadow: inset 0 0 10px 10px rgba(225, 0, 255, 0.753);
-          box-shadow: inset 0 0 10px 10px rgba(225, 0, 255, 0.753);
-  color: azure;
+body.edward {
+  background-image: url(../img/flash.jpg);
+  -webkit-box-shadow: inset 0 0 10px 10px rgba(0, 217, 255, 0.753);
+          box-shadow: inset 0 0 10px 10px rgba(0, 217, 255, 0.753);
+  color: #46bfe0;
 }
 
-body.ciel nav {
+body.edward nav {
   background: #020024;
-  background: linear-gradient(27deg, #020024 0%, #790966 56%, #00d4ff 100%);
+  background: linear-gradient(27deg, #020024 0%, #140979 56%, #67e2dc 100%);
 }
 
-body.ciel nav button {
-  -webkit-box-shadow: 0 0 5px 5px rgba(225, 0, 255, 0.753);
-          box-shadow: 0 0 5px 5px rgba(225, 0, 255, 0.753);
-  color: rgba(225, 0, 255, 0.753);
-  background-color: azure;
+body.edward nav button {
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 217, 255, 0.753);
+          box-shadow: 0 0 5px 5px rgba(0, 217, 255, 0.753);
+  color: rgba(0, 217, 255, 0.753);
+  background-color: #b7dbdb;
 }
 
-body.ciel nav button a {
-  color: #500850;
+body.edward nav button a {
+  color: #030833;
 }
 
-body.ciel nav button a:hover {
-  color: azure;
+body.edward nav button a:hover {
+  color: #021111;
 }
 
-body.ciel nav button:hover {
-  background-color: rgba(225, 0, 255, 0.753);
+body.edward nav button:hover {
+  background-color: rgba(0, 217, 255, 0.753);
 }
 
-body.ciel .color {
-  background-color: rgba(110, 14, 110, 0.52);
+body.edward .color {
+  background-color: rgba(5, 37, 80, 0.52);
 }
 
-body.ciel .color a {
+body.edward .color a {
   color: #0a0108;
   text-transform: uppercase;
 }
 
-body.ciel .color a:hover {
-  background-color: rgba(80, 8, 80, 0.671);
+body.edward .color a:hover {
+  background-color: rgba(8, 21, 80, 0.671);
 }
 
-body.ciel .color img {
-  -webkit-box-shadow: 0 0 5px 5px rgba(225, 0, 255, 0.753);
-          box-shadow: 0 0 5px 5px rgba(225, 0, 255, 0.753);
+body.edward .color img {
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 217, 255, 0.753);
+          box-shadow: 0 0 5px 5px rgba(0, 217, 255, 0.753);
 }
 
-body.ciel .color li {
-  border-bottom: 1px solid rgba(225, 0, 255, 0.753);
-  border-left: 1px solid rgba(225, 0, 255, 0.753);
-  background-color: rgba(110, 14, 110, 0.17);
+body.edward .color li {
+  border-bottom: 1px solid rgba(0, 217, 255, 0.753);
+  border-left: 1px solid rgba(0, 217, 255, 0.753);
+  background-color: rgba(10, 26, 77, 0.575);
 }
-/*# sourceMappingURL=styleCiel.css.map */
+/*# sourceMappingURL=edward.css.map */

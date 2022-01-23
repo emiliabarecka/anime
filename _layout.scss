@@ -24,6 +24,7 @@ body{
             height:120px;
         }
         h1{
+            letter-spacing: 2px;
             @media(min-width:$sm){
                 font-size: 2.2rem;
                 padding: 40px 0;
