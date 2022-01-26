@@ -1,37 +1,23 @@
 const guzik = document.querySelector("button");
 const menu = document.querySelector("nav");
 const sections = document.querySelectorAll("section");
-const imgs = document.querySelectorAll('img');
-const h1 = document.querySelector('.title');
-const text = 'Najlepsze anime na start';
-let activeLetter = 0;
 
+const imgsToChange = ["img/270.webp", "img/wei.jpg","img/ciel.jpg", "img/eddy1.jpg"];
+const changeImg = document.querySelector('img.startPage');
+const time = 7000;
+let active = 0;
 
-function addLetter(){
-    h1.textContent += text[activeLetter];
-    activeLetter++;
-    if(activeLetter === text.length){
-        activeText = 0;
-        clearInterval(inter);
-   }; 
+function changeSlide(){
+    active ++;
+    if(active === imgsToChange.length){
+        active = 0;
+    }
+    if(active < 0){
+        active = imgsToChange -1;
+    }
+    changeImg.src = imgsToChange[active];
 }
-let inter = setInterval(addLetter, 40);
-
-
-imgs.forEach((im) =>{
-    im.addEventListener('click', function(){ 
-        console.log(this);
-        im.classList.toggle("superSchadow");
-
-    })
-});
-
-
-guzik.addEventListener("click", function(){
-    console.log("click");
-    menu.classList.toggle("d-none");
-    guzik.classList.toggle("alfa")
-})
+setInterval(changeSlide, time);
 
     
     fetch("./mainPage.json")
