@@ -2,10 +2,19 @@ const guzik = document.querySelector("button");
 const menu = document.querySelector("nav");
 const sections = document.querySelectorAll("section");
 
-const imgsToChange = ["img/270.webp", "img/wei.jpg","img/ciel.jpg", "img/eddy1.jpg"];
+const imgsToChange = ["img/Saber.png","img/ellieBadass.jpg", "img/eddy1.jpg","img/badDio.jpg","img/grumpyLan.jpg"];
 const changeImg = document.querySelector('img.startPage');
-const time = 7000;
-let active = 0;
+const time = 9000;
+let active = 1;
+
+const hamburger = document.querySelector('.ham');
+const nav = document.querySelector('.navigation');
+const ul = nav.querySelector('ul');
+hamburger.addEventListener('click', ()=>{
+    hamburger.classList.toggle('ham--active');
+    nav.classList.toggle('navigation--active');
+    console.log('nav');
+})
 
 function changeSlide(){
     active ++;
@@ -17,7 +26,7 @@ function changeSlide(){
     }
     changeImg.src = imgsToChange[active];
 }
-setInterval(changeSlide, time);
+    setInterval(changeSlide, time);
 
     
     fetch("./mainPage.json")
@@ -31,6 +40,14 @@ setInterval(changeSlide, time);
                     let info = section.querySelector(".info");
                     let ep = section.querySelector(".epizodes");
                     let type = section.querySelector(".type");
+                    let a = document.createElement('a');
+                    document.createElement('ul');
+                    a.setAttribute('href', '#'+ section.id);
+                    
+                    a.textContent = anime['name'];
+                    ul.appendChild(a);
+                    
+                    console.log(a);
 
                     opis.innerHTML = anime["description"]
                     opis1.textContent = anime["description1"]
@@ -42,3 +59,6 @@ setInterval(changeSlide, time);
            
         });
     });
+        
+        
+    

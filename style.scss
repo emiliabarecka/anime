@@ -21,6 +21,91 @@ html{
         div.startPage{
             background-color: rgba(0, 0, 0, 0.527);
             padding-bottom: 40px;
+
+            button.ham{
+                position: fixed;
+                padding: 10px;
+                display: inline-block;
+                cursor: pointer;
+                background-color: transparent;
+                border: 0;
+                margin: 10px 0;
+                left: 20px;
+                    &:hover{
+                        box-shadow:0 0 2px 0 violet; ;
+                        border-radius: 50px;
+                    }
+            }
+            .ham-box{
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                position: relative;    
+            }
+            @mixin ham-line{
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background-color: rgb(67, 207, 91);  
+            }
+            .ham-inn{
+                @include ham-line;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                    &::before{
+                        content: '';
+                        @include ham-line;
+                        left: 0;
+                        top: -10px;
+                    }
+                    &::after{
+                        content: '';
+                        @include ham-line;
+                        left: 0;
+                        top: 10px;
+                    }
+            }
+            .ham--active .ham-inn{
+                background-color: transparent;
+            }
+            .ham--active .ham-inn::before{
+                transform:translateY(10px) rotate(45deg);
+            }
+            .ham--active .ham-inn::after{
+                transform:translateY(-10px) rotate(-45deg);
+            }
+            div.navigation--active{
+                transform: translateX(0px);
+            }
+            .navigation{
+                height: 60vh;
+                width: 170px;
+                background-color: rgba(18, 36, 139, 0.938);
+                position: fixed;
+                top: 60px;
+                left: 0;
+                transform: translateX(-170px);
+                transition: transform .3s .1s ease-in-out;
+                z-index: 1;
+                padding: 10px;
+                border-radius: 20px;
+                
+               
+
+                
+                a{
+                    display: block;
+                    text-decoration: none;
+                    margin: 20px 10px;
+                    text-align: left;
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    color:rgb(67, 207, 91);;
+                    border-bottom: 1px solid rgb(67, 207, 91);
+                }
+            }
+            
         }
         @media(min-width:1200px){
             div.container{
@@ -50,33 +135,26 @@ html{
             box-shadow: 10px 0 10px 10px violet;
             
             
-            h1, h2, h3{
-                font-size: 3rem;
+            h1{
+                font-size: 2.6rem;
+                padding:70px 20px 10px;
+                font-weight: normal;
+                // background: rgb(2,0,36);
+                // background: linear-gradient(27deg, rgb(5, 4, 20) 0%, rgba(12, 6, 97, 0.465) 70%, rgb(234, 0, 255) 100%);
+            }            
+            h2, h3{
+                font-size: 1.7rem;
                 padding: 20px ;
                 font-weight: normal;
             }
-            
-            h2, h3{
-                font-size: 1.7rem;
-            }
-            nav{
-                display: none;
-            }
-            button{
-                display: none;
-                &:hover{
-                    background-color: hotpink;
-                    cursor: pointer;
-                }
-            }
-            
-
+           
+        
            @keyframes move{
             0%   { opacity:0; left:-100px; top:0px;}
             25%  {opacity:1; left:0px; top:0px;}
             50%  { opacity:1;left:0px; top:0px;}
-            75%  {left:130px; top:0px;}
-            100% {opacity:0; left:130px; top:0px;}
+            75%  {left:150px; top:0px;}
+            100% {opacity:0; left:150px; top:0px;}
             }
            
             img{
@@ -85,58 +163,34 @@ html{
                 border-radius: 50%;
                 box-shadow:  0 0 10px 10px rgba(214, 170, 214, 0.671);
                 animation-name: move;
-                animation-duration: 7s;
+                animation-duration: 9s;
+                animation-delay: 1s;
                 animation-iteration-count: infinite;
 
             }
 
             
             @media(min-width:720px){
-                
-                button{
-                    
-                    display: block;
-                    margin-left: 60px;
-                    margin-bottom: 10px;
-                    padding: 5px 10px;
-                    letter-spacing: 3px;
-                    text-transform: uppercase;
-                    background-color: rgb(151, 65, 151);
-                    border-radius: 15%;
-                    color: rgb(248, 204, 248);
-                    border: 2px solid rgb(248, 204, 248);    
-                    font-family:inherit;
-                    position: absolute;
-                    bottom: 0;
-                }
-
-                nav{
-                    display: block;
-                    position: absolute;
-                    bottom: 50px;
-                    left: 60px;
-                }
-
-            li a{
-                    display: block;
-                    text-decoration: none;
-                    color: rgb(248, 204, 248);
-                    border: 1px solid rgb(248, 204, 248);
-                    border-radius: 15%;
-                    background-color: rgba(219, 168, 219, 0.5);
-                    padding: 10px 4px;
-                    box-sizing: content-box;
-                    width: 60%;
-                    letter-spacing: 1.2px;
-                }
-                a:hover{
-                    background-color: rgb(151, 65, 151);
-                }
+                @keyframes move{
+                    0%   { opacity:0; left:-200px; top:0px;}
+                    25%  {opacity:1; left:0px; top:0px;}
+                    50%  { opacity:1;left:0px; top:0px;}
+                    75%  {left:250px; top:0px;}
+                    100% {opacity:0; left:250px; top:0px;}
+                    }
             }
             @media(min-width:996px){
+                @keyframes move{
+                    0%   { opacity:0; left:-200px; top:0px;}
+                    25%  {opacity:1; left:0px; top:0px;}
+                    50%  { opacity:1;left:0px; top:0px;}
+                    75%  {left:300px; top:0px;}
+                    95%  {opacity:0}
+                    100% {opacity:0; left:300px; top:0px;}
+                    }
                 h1{
                     font-size: 4rem;
-                    padding-top: 10%;
+                    width: 100vw;
                 }
                 h2, h3{
                     padding: 30px;
@@ -147,55 +201,16 @@ html{
                 img{
                     margin-bottom: 10%;
                 }
-            button{
-                font-size: 1.5rem;
-                bottom: 5%;
-            }
-            nav{
-                bottom: 10%;
-            }
             }
             @media(min-width: 1200px){
 
                 h1{
-                    padding-top: 5%;
+                    width: 100vw;
+                
                 }
                 h2, h3{
                     font-size: 2rem;
-                }
-                button{
-                    font-size: 2rem;
-                    left: 6%;
-                    bottom:10%;
-                }
-                nav{
-                    left: 10%;
-                    bottom: 20%;
-                }
-                li a{
-                    font-size: 1.5rem;
-                }
-                
-                
-                @media(min-width:1400px){
-                    button{
-                        left:9%;
-                    }
-                    nav{
-                        left:13%
-                    }
-                }
-                @media(min-width:1600px){
-                    button{
-                        left:10%;
-                        font-size: 3rem;
-                    }
-                }
-                li a{
-                    font-size: 2rem;
-                }
-                
-                
+                }    
             }
         }
         // jaro
