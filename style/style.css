@@ -122,15 +122,13 @@ body div.startPage .navigation a {
   body div.container {
     width: 80vw;
     margin-left: 10vw;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
   }
 }
 
 @media (min-width: 1600px) {
   body div.container {
     width: 60vw;
-    margin-left: 15vw;
+    margin-left: 20vw;
   }
 }
 
@@ -367,11 +365,12 @@ body header img {
 }
 
 @media (min-width: 1200px) {
-  body header h1 {
-    width: 100vw;
+  body header h1.title {
+    text-align: left;
+    margin-left: 200px;
   }
   body header h2, body header h3 {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
 }
 

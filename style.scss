@@ -111,14 +111,14 @@ html{
             div.container{
                 width:80vw;
                 // padding: 0 4vw;
-                margin-left: 10vw;
-                box-sizing: content-box;
+                margin-left: 10vw;    
+                
             }
         }
         @media(min-width:1600px){
             div.container{
                 width:60vw;
-                margin-left: 15vw;        
+                margin-left: 20vw;        
             }
         }
         li{
@@ -203,16 +203,16 @@ html{
                     margin-bottom: 10%;
                 }
             }
-            @media(min-width: 1200px){
-
-                h1{
-                    width: 100vw;
-                
+            @media(min-width:1200px){
+                h1.title{
+                    text-align: left;
+                    margin-left: 200px;
                 }
                 h2, h3{
-                    font-size: 2rem;
-                }    
+                    font-size: 2.6rem;
+                }
             }
+         
         }
         // jaro
         main {
