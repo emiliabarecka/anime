@@ -91,7 +91,6 @@ body div.startPage div.navigation--active {
 }
 
 body div.startPage .navigation {
-  height: 60vh;
   width: 170px;
   background-color: rgba(18, 36, 139, 0.938);
   position: fixed;
@@ -182,6 +181,9 @@ body header h2, body header h3 {
     left: 150px;
     top: 0px;
   }
+  90% {
+    opacity: 0;
+  }
   100% {
     opacity: 0;
     left: 150px;
@@ -209,6 +211,9 @@ body header h2, body header h3 {
     left: 150px;
     top: 0px;
   }
+  90% {
+    opacity: 0;
+  }
   100% {
     opacity: 0;
     left: 150px;
@@ -226,8 +231,8 @@ body header img {
           animation-name: move;
   -webkit-animation-duration: 9s;
           animation-duration: 9s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }

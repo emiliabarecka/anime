@@ -79,7 +79,7 @@ html{
                 transform: translateX(0px);
             }
             .navigation{
-                height: 60vh;
+                
                 width: 170px;
                 background-color: rgba(18, 36, 139, 0.938);
                 position: fixed;
@@ -154,6 +154,7 @@ html{
             25%  {opacity:1; left:0px; top:0px;}
             50%  { opacity:1;left:0px; top:0px;}
             75%  {left:150px; top:0px;}
+            90%  {opacity:0}
             100% {opacity:0; left:150px; top:0px;}
             }
            
@@ -164,7 +165,7 @@ html{
                 box-shadow:  0 0 10px 10px rgba(214, 170, 214, 0.671);
                 animation-name: move;
                 animation-duration: 9s;
-                animation-delay: 1s;
+                animation-delay: 1.3s;
                 animation-iteration-count: infinite;
 
             }

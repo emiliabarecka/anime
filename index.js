@@ -2,7 +2,7 @@ const guzik = document.querySelector("button");
 const menu = document.querySelector("nav");
 const sections = document.querySelectorAll("section");
 
-const imgsToChange = ["img/Saber.png","img/ellieBadass.jpg", "img/eddy1.jpg","img/badDio.jpg","img/grumpyLan.jpg"];
+const imgsToChange = ["img/eddy1.jpg","img/ellieBadass.jpg","img/Saber.png","img/badDio.jpg","img/grumpyLan.jpg"];
 const changeImg = document.querySelector('img.startPage');
 const time = 9000;
 let active = 1;
@@ -13,7 +13,6 @@ const ul = nav.querySelector('ul');
 hamburger.addEventListener('click', ()=>{
     hamburger.classList.toggle('ham--active');
     nav.classList.toggle('navigation--active');
-    console.log('nav');
 })
 
 function changeSlide(){
@@ -28,6 +27,10 @@ function changeSlide(){
 }
     setInterval(changeSlide, time);
 
+    function removeNav(){
+        nav.classList.remove('navigation--active');
+        hamburger.classList.remove('ham--active');
+    }
     
     fetch("./mainPage.json")
     .then(response => response.json())
@@ -46,8 +49,8 @@ function changeSlide(){
                     
                     a.textContent = anime['name'];
                     ul.appendChild(a);
+                    a.addEventListener('click', removeNav);
                     
-                    console.log(a);
 
                     opis.innerHTML = anime["description"]
                     opis1.textContent = anime["description1"]
