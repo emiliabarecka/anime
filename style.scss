@@ -160,24 +160,24 @@ html{
             h1{
                 font-size: 2.6rem;
                 padding:70px 20px 10px;
-                font-weight: normal;
+                font-weight: bolder;
                 // background: rgb(2,0,36);
                 // background: linear-gradient(27deg, rgb(5, 4, 20) 0%, rgba(12, 6, 97, 0.465) 70%, rgb(234, 0, 255) 100%);
             }            
             h2, h3{
                 font-size: 1.7rem;
                 padding: 20px ;
-                font-weight: normal;
+                font-weight: bolder;
             }
            
         
            @keyframes move{
-            0%   { opacity:0; left:-100px; top:0px;}
+            0%   { opacity:0; left:-90px; top:0px;}
             25%  {opacity:1; left:0px; top:0px;}
             50%  { opacity:1;left:0px; top:0px;}
-            75%  {left:150px; top:0px;}
+            75%  {left:110px; top:0px;}
             90%  {opacity:0}
-            100% {opacity:0; left:150px; top:0px;}
+            100% {opacity:0; left:110px; top:0px;}
             }
            
             img{
@@ -192,28 +192,27 @@ html{
 
             }
 
-            
             @media(min-width:720px){
                 @keyframes move{
-                    0%   { opacity:0; left:-200px; top:0px;}
+                    0%   { opacity:0; left:-250px; top:0px;}
                     25%  {opacity:1; left:0px; top:0px;}
                     50%  { opacity:1;left:0px; top:0px;}
-                    75%  {left:250px; top:0px;}
+                    75%  {opacity:0;left:250px; top:0px;}
                     100% {opacity:0; left:250px; top:0px;}
                     }
             }
             @media(min-width:996px){
                 @keyframes move{
-                    0%   { opacity:0; left:-200px; top:0px;}
+                    0%   { opacity:0; left:-300px; top:0px;}
                     25%  {opacity:1; left:0px; top:0px;}
                     50%  { opacity:1;left:0px; top:0px;}
-                    75%  {left:300px; top:0px;}
+                    75%  {opacity:0;left:300px; top:0px;}
                     95%  {opacity:0}
                     100% {opacity:0; left:300px; top:0px;}
                     }
                 h1{
                     font-size: 4rem;
-                    width: 100vw;
+                    
                 }
                 h2, h3{
                     padding: 30px;
@@ -230,13 +229,12 @@ html{
                     0%   { opacity:0; left:-400px; top:0px;}
                     25%  {opacity:1; left:0px; top:0px;}
                     50%  { opacity:1;left:0px; top:0px;}
-                    75%  {left:400px; top:0px;}
+                    75%  {opacity:0;left:400px; top:0px;}
                     95%  {opacity:0}
                     100% {opacity:0; left:400px; top:0px;}
                     }
                 h1.title{
-                    text-align: left;
-                    margin-left: 200px;
+                    text-align: center;    
                 }
                 h2, h3{
                     font-size: 2.6rem;

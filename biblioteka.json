@@ -17,11 +17,19 @@
     },
     {
         "title":"Edward Elric",
-        "description":"Głowny bohater anime 'Stalowy Alchemik - Misja Braci'. Razem ze swoim młodszym bratem - Alphonsem został ciężko ranny podczas nieudanej próby przywrócenia do życia ich matki. Po wypadku poświęca się w całości nauce alchemii i zostaje najmłodszym Państwowym Alchemikiem kiedykolwiek. Jego misją jest odnalezienie Kamienia Filozoficznego, żeby uleczyć siebie i brata. ",
+        "description":"Jeden z głównych bohaterów anime 'Stalowy Alchemik - Misja Braci'. Razem ze swoim młodszym bratem - <a href = '../pages/alphonse.html'>Alphonsem</a> został ciężko ranny podczas nieudanej próby przywrócenia do życia ich matki. Po wypadku poświęca się w całości nauce alchemii i zostaje najmłodszym Państwowym Alchemikiem kiedykolwiek. Jego misją jest odnalezienie Kamienia Filozoficznego, żeby uleczyć siebie i brata. ",
         "name":"Edward Elric , Stalowy Alchemik.",
-        "looks":"Jest niewysokim jak na swój wiek 15-latkiem. Ma  niesforne jasne włosy, które czesze w kucyk lub warkocz i jasne, prawie złote oczy. Zamiast prawej ręki i lewej nogi ma metalowe protezy. Z tego powodu nosi białe rękawiczki. Często nosi czerwony płaszcz z kapturem, z wymalowanym na plecach znakiem alchemii. ",
+        "looks":"Jest niewysokim jak na swój wiek 15-latkiem. Ma  niesforne blond włosy, które czesze w kucyk lub warkocz i jasne, prawie złote oczy. Zamiast prawej ręki i lewej nogi ma metalowe protezy. Z tego powodu nosi białe rękawiczki. Często nosi czerwony płaszcz z kapturem, z wymalowanym na plecach znakiem alchemii. ",
         "character":"Edward jest arogancki i  niezwykle uparty. Nie lubi słuchać poleceń, czym często przyprawia o ból głowy swoich przełożonych w wojsku. Nie lubi bezczynności i woli rozwiązania siłowe od dyplomacji. Jest przewrażliwiony na punkcie swojego niskiego wrostu i do szału doprowadza go , kiedy ktoś nazwie go kurduplem (co zdarza się bardzo często). Mimo tych wad jest oprócz tego odważny, lojalny i szczery. Ma słabość do ludzi potrzebujący pomocy i zawsze staje po ich stronie. Największą miłością darzy młodszego brata - Alphonsa i najbardziej na świeci pragnie pomóc mu wrócić do dawnego ciała.",
         "abilities":"Świetny ,wyszkolony wojownik. Dzieki swoim protezom silny i dporny na ataki. Ma dużą wiedzę o alchemii i może ją stosowac bez konieczności rysowania kręgów transmutacyjnych. Inteligentny i sprytny."
+    },
+    {
+        "title":"Alphonse Elric",
+        "description":"Młodszy brat głównego bohatera anime 'Stalowy Alchemik - Misja Braci' - <a href= '../pages/edward.html'>Edwarda Elrica</a>. Starcił swoje ciało , podczas zakazenego rutuału transmutacji człowieka (wraz z bratem próbowali ożywić matkę). Dzięki poświęceniu Edwarda udało mu się zachować duszę, która od tamtej pory zamieszkuje w ogromnej, pustej w środku zbroi. Wraz z dawnym ciałem stracił zdolność do snu, nie czuje smaku jedzenia, ani dotyku. Najbardziej pragnie znowu być w pełni człowiekiem.",
+        "name":"Alphonse Elric, Al (dla brata) , Opancerzony Alchemik.",
+        "looks":"Jako człowiek Alphonse jest bardzo podobny do brata - te same jasne włosy i złote oczy. Pod postacią zbroi jego wygląd jest imponujący i budzi respekt. To potężnych rozmiarów pancerz z wystającymi z ramion, nóg i czoła kolcami. We wnętrzu jego chełmu znajduje się znak alchemiczny, który pozwala duszy Ala pozostać w zbroi.",
+        "character":"Jego usposobienie jest znacznie łagodniejsze niż jego brata. Al ma wiele cierpliwości, nie chce sprawiać nikomu przykrości. Martwi go, gdy ktoś reaguje strachem widząc jego ogromną postać. Lubi małe zwierzęta, zwłaszcza koty i chętnie adoptowałby każdą napotkaną przybłędę. Czasem udziela im schronienia we wnetrzu swojej zbroi. Alphonse jest niespotykanie dobrym bohaterem, z dziecinnie czystą duszą.",
+        "abilities":"Dzięki szkoleniu z młodszych lat świetnie walczy wręcz. Jego obecna powłoka zapewnia mu ponadto nieskończone siły, odporność na kule i nadludzką siłę. Posiada też dużą wiedzę z zakresu alchemii i  biegle sie nią posługuje. "
     }
     
 ]

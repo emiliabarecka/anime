@@ -170,7 +170,7 @@ body .container .first a {
 
 @media (min-width: 1200px) {
   body .container .second img {
-    width: 60vw;
+    width: 50vw;
   }
 }
 
@@ -273,11 +273,11 @@ body.edward nav button {
   -webkit-box-shadow: 0 0 5px 5px rgba(0, 217, 255, 0.753);
           box-shadow: 0 0 5px 5px rgba(0, 217, 255, 0.753);
   color: rgba(0, 217, 255, 0.753);
-  background-color: #b7dbdb;
+  background-color: rgba(24, 24, 61, 0.822);
 }
 
 body.edward nav button a {
-  color: #030833;
+  color: #46bfe0;
 }
 
 body.edward nav button a:hover {
@@ -285,7 +285,7 @@ body.edward nav button a:hover {
 }
 
 body.edward nav button:hover {
-  background-color: rgba(0, 217, 255, 0.753);
+  background-color: rgba(128, 128, 128, 0.685);
 }
 
 body.edward .color {
@@ -293,12 +293,12 @@ body.edward .color {
 }
 
 body.edward .color a {
-  color: #0a0108;
+  color: #f1f1f6;
   text-transform: uppercase;
 }
 
 body.edward .color a:hover {
-  background-color: rgba(8, 21, 80, 0.671);
+  background-color: rgba(221, 223, 233, 0.397);
 }
 
 body.edward .color img {

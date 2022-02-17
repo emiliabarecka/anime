@@ -172,19 +172,19 @@ body header {
 body header h1 {
   font-size: 2.6rem;
   padding: 70px 20px 10px;
-  font-weight: normal;
+  font-weight: bolder;
 }
 
 body header h2, body header h3 {
   font-size: 1.7rem;
   padding: 20px;
-  font-weight: normal;
+  font-weight: bolder;
 }
 
 @-webkit-keyframes move {
   0% {
     opacity: 0;
-    left: -100px;
+    left: -90px;
     top: 0px;
   }
   25% {
@@ -198,7 +198,7 @@ body header h2, body header h3 {
     top: 0px;
   }
   75% {
-    left: 150px;
+    left: 110px;
     top: 0px;
   }
   90% {
@@ -206,7 +206,7 @@ body header h2, body header h3 {
   }
   100% {
     opacity: 0;
-    left: 150px;
+    left: 110px;
     top: 0px;
   }
 }
@@ -214,7 +214,7 @@ body header h2, body header h3 {
 @keyframes move {
   0% {
     opacity: 0;
-    left: -100px;
+    left: -90px;
     top: 0px;
   }
   25% {
@@ -228,7 +228,7 @@ body header h2, body header h3 {
     top: 0px;
   }
   75% {
-    left: 150px;
+    left: 110px;
     top: 0px;
   }
   90% {
@@ -236,7 +236,7 @@ body header h2, body header h3 {
   }
   100% {
     opacity: 0;
-    left: 150px;
+    left: 110px;
     top: 0px;
   }
 }
@@ -261,7 +261,7 @@ body header img {
   @-webkit-keyframes move {
     0% {
       opacity: 0;
-      left: -200px;
+      left: -250px;
       top: 0px;
     }
     25% {
@@ -275,6 +275,7 @@ body header img {
       top: 0px;
     }
     75% {
+      opacity: 0;
       left: 250px;
       top: 0px;
     }
@@ -287,7 +288,7 @@ body header img {
   @keyframes move {
     0% {
       opacity: 0;
-      left: -200px;
+      left: -250px;
       top: 0px;
     }
     25% {
@@ -301,6 +302,7 @@ body header img {
       top: 0px;
     }
     75% {
+      opacity: 0;
       left: 250px;
       top: 0px;
     }
@@ -316,7 +318,7 @@ body header img {
   @-webkit-keyframes move {
     0% {
       opacity: 0;
-      left: -200px;
+      left: -300px;
       top: 0px;
     }
     25% {
@@ -330,6 +332,7 @@ body header img {
       top: 0px;
     }
     75% {
+      opacity: 0;
       left: 300px;
       top: 0px;
     }
@@ -345,7 +348,7 @@ body header img {
   @keyframes move {
     0% {
       opacity: 0;
-      left: -200px;
+      left: -300px;
       top: 0px;
     }
     25% {
@@ -359,6 +362,7 @@ body header img {
       top: 0px;
     }
     75% {
+      opacity: 0;
       left: 300px;
       top: 0px;
     }
@@ -373,7 +377,6 @@ body header img {
   }
   body header h1 {
     font-size: 4rem;
-    width: 100vw;
   }
   body header h2, body header h3 {
     padding: 30px;
@@ -404,6 +407,7 @@ body header img {
       top: 0px;
     }
     75% {
+      opacity: 0;
       left: 400px;
       top: 0px;
     }
@@ -433,6 +437,7 @@ body header img {
       top: 0px;
     }
     75% {
+      opacity: 0;
       left: 400px;
       top: 0px;
     }
@@ -446,8 +451,7 @@ body header img {
     }
   }
   body header h1.title {
-    text-align: left;
-    margin-left: 200px;
+    text-align: center;
   }
   body header h2, body header h3 {
     font-size: 2.6rem;

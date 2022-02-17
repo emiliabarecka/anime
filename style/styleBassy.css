@@ -170,7 +170,7 @@ body .container .first a {
 
 @media (min-width: 1200px) {
   body .container .second img {
-    width: 60vw;
+    width: 50vw;
   }
 }
 
